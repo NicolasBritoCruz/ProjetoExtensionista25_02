@@ -1,0 +1,82 @@
+[
+  {
+    "id_cliente": "C007",
+    "id_funcionario": "F03",
+    "id_serviço": 14,
+    "autor": "cliente",
+    "mensagem": "Bom dia, tô precisando formatar meu notebook, quanto é",
+    "data": "2025-08-07",
+    "hora": "09:12",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C007",
+    "id_funcionario": "F03",
+    "id_serviço": 14,
+    "autor": "empresa",
+    "mensagem": "Bom dia, com backup é (preço) e sem backup é (preço)",
+    "data": "2025-08-07",
+    "hora": "09:15",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C007",
+    "id_funcionario": "F03",
+    "id_serviço": 14,
+    "autor": "cliente",
+    "mensagem": "Show! Vou deixar ele aí de tarde, tá muito lento",
+    "data": "2025-08-07",
+    "hora": "09:16",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C007",
+    "id_funcionario": "F03",
+    "id_serviço": 14,
+    "autor": "empresa",
+    "mensagem": "Fechado ",
+    "data": "2025-08-07",
+    "hora": "09:18",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C007",
+    "id_funcionario": "F03",
+    "id_serviço": 14,
+    "autor": "empresa",
+    "mensagem": "Já comecei a formatação, devo terminar até amanhã cedo",
+    "data": "2025-08-07",
+    "hora": "15:40",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C007",
+    "id_funcionario": "F03",
+    "id_serviço": 14,
+    "autor": "cliente",
+    "mensagem": "Tranquilo, preciso só amanhã mesmo",
+    "data": "2025-08-07",
+    "hora": "15:44",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C007",
+    "id_funcionario": "F03",
+    "id_serviço": 14,
+    "autor": "empresa",
+    "mensagem": "Notebook tá pronto aqui, pode passar buscar quando puder",
+    "data": "2025-08-08",
+    "hora": "09:05",
+    "estado_servico": "concluido"
+  },
+  {
+    "id_cliente": "C007",
+    "id_funcionario": "F03",
+    "id_serviço": 14,
+    "autor": "cliente",
+    "mensagem": "Perfeito, vou aí ainda de manhã, valeu!",
+    "data": "2025-08-08",
+    "hora": "09:10",
+    "estado_servico": "concluido"
+  }
+]

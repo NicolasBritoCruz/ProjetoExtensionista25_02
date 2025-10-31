@@ -1,0 +1,134 @@
+﻿arquivo,id_cliente,id_funcionario,mensagem,emocao_en,emocao_pt,confianca,estado_servico
+atendimento001.json,C001,F01,Vou precisar de levar meu Pc pra vc segunda kkkkk,amusement,diversão,0.9756,pendente
+atendimento001.json,C001,F01,"Pc não tá ligando, acho que é b.o no ssd",neutral,neutro,0.9834,pendente
+atendimento001.json,C001,F01,"acho que pode ser o disco C, kakakakka",neutral,neutro,0.9844,pendente
+atendimento001.json,C001,F01,Não tá dando boot,neutral,neutro,0.9914,pendente
+atendimento001.json,C001,F01,Ele liga mas não aparece tela nenhuma,neutral,neutro,0.9926,pendente
+atendimento001.json,C001,F01,"Nem dá, fica preta e em economia de energia no monitor",neutral,neutro,0.9872,pendente
+atendimento001.json,C001,F01,"Meu SSD de vez enquanto não reconhecia, mas era só o disco e kakakaka",neutral,neutro,0.9876,pendente
+atendimento001.json,C001,F01,"Quero sim, mando pra vcs ou preferem passar aqui?",curiosity,curiosidade,0.7581,pendente
+atendimento001.json,C001,F01,Se puderem passar aqui,neutral,neutro,0.9833,pendente
+atendimento001.json,C001,F01,"Segunda podem chegar qualquer horário quase, já deixo no jeito",neutral,neutro,0.9937,pendente
+atendimento001.json,C001,F01,Tá funcionando?,curiosity,curiosidade,0.8487,andamento
+atendimento001.json,C001,F01,Ele não aparecia nada na tela e ai ficava entrando em economia de energia,neutral,neutro,0.9867,andamento
+atendimento001.json,C001,F01,Será que é meu monitor? Que tristeza,sadness,tristeza,0.8787,andamento
+atendimento001.json,C001,F01,Infelizmente acho que o problema vai ser meu monitor então,sadness,tristeza,0.9242,concluído
+atendimento001.json,C001,F01,Ou na tomada/filtro de linha,neutral,neutro,0.9921,concluído
+atendimento001.json,C001,F01,"Cara, se vc for agora pode deixar",neutral,neutro,0.976,concluído
+atendimento001.json,C001,F01,Quanto foi meu chegado?,curiosity,curiosidade,0.7795,concluído
+atendimento001.json,C001,F01,"Muito obrigado, deu certo",gratitude,gratidão,0.9918,concluído
+atendimento001.json,C001,F01,Ligou de primeira,neutral,neutro,0.9866,concluído
+atendimento002.json,C002,F01,"Bom dia! Fico no aguardo de atualizações, obrigada!",gratitude,gratidão,0.9907,pendente
+atendimento002.json,C002,F01,"Eu estava assistindo meus cursinhos, e desconectava do wi-fi sozinho",neutral,neutro,0.9341,pendente
+atendimento002.json,C002,F01,"Pode ser isso então, porque o roteador lá de casa é bem antigo",confusion,confusão,0.8107,pendente
+atendimento002.json,C002,F01,"Certinho, qual o valor?",curiosity,curiosidade,0.686,concluído
+atendimento002.json,C002,F01,"Viu, muito obrigada mesmo!",gratitude,gratidão,0.9895,concluído
+atendimento003.json,C003,F01,tudo em riba contigo? sabe me dizer se seu pai realiza reparo em placa mãe de not?,curiosity,curiosidade,0.8783,pendente
+atendimento003.json,C003,F01,não achei nenhum mesmo kk sabe de algum em cidade vizinha?,amusement,diversão,0.9473,pendente
+atendimento003.json,C003,F01,Ficaria grato,gratitude,gratidão,0.9741,pendente
+atendimento003.json,C003,F01,seu pai sabe consertar ventoinha de placa de video? uma das 3 minhas parou de  rodar,curiosity,curiosidade,0.8686,pendente
+atendimento003.json,C003,F01,soltou uma borrachinha dela que não faz girar ai preciso apenas de abrir e voltar ela no lugar,neutral,neutro,0.9431,pendente
+atendimento003.json,C003,F01,Que horas posso levar o cooler pro seu pai dar uma olhada?,curiosity,curiosidade,0.7682,pendente
+atendimento003.json,C003,F01,No caso abrir o cooler,neutral,neutro,0.9932,pendente
+atendimento003.json,C003,F01,Ah tranquilo mestre,neutral,neutro,0.9111,concluído
+atendimento004.json,C004,F02,O computador do caixa não quer imprimir na impressora do escritório,neutral,neutro,0.9918,pendente
+atendimento004.json,C004,F02,Já te passo,neutral,neutro,0.9912,pendente
+atendimento004.json,C004,F02,1262843995,neutral,neutro,0.9863,pendente
+atendimento004.json,C004,F02,1762443894,neutral,neutro,0.9866,pendente
+atendimento004.json,C004,F02,ok,neutral,neutro,0.964,andamento
+atendimento004.json,C004,F02,Sim,approval,aprovação,0.8609,andamento
+atendimento004.json,C004,F02,"Ok, muito obrigado!",gratitude,gratidão,0.9922,concluido
+atendimento005.json,C005,F02,Boa tarde,gratitude,gratidão,0.8646,pendente
+atendimento005.json,C005,F02,"Tô com um probleminha no office, aqui, pode me ajudar?",curiosity,curiosidade,0.7221,pendente
+atendimento005.json,C005,F02,841721352,neutral,neutro,0.9839,pendente
+atendimento005.json,C005,F02,"Quando eu colo esse conteúdo, trava a edição",neutral,neutro,0.9895,andamento
+atendimento005.json,C005,F02,"Deu certo, oq era?",curiosity,curiosidade,0.688,concluido
+atendimento005.json,C005,F02,"Muito obrigado, qual o valor?",gratitude,gratidão,0.9565,concluido
+atendimento005.json,C005,F02,"Certinho, obrigado novamente",gratitude,gratidão,0.9567,concluido
+atendimento006.json,C006,F02,"Opa, boa tarde",joy,alegria,0.709,andamento
+atendimento006.json,C006,F02,"Vai que é algo importante, rsrsrs",amusement,diversão,0.9004,andamento
+atendimento006.json,C006,F02,Tá dando trampo aí amigo??,neutral,neutro,0.8568,andamento
+atendimento006.json,C006,F02,Ahhhh beleza,admiration,admiração,0.7601,andamento
+atendimento006.json,C006,F02,"Eu mando, pode deixar",neutral,neutro,0.9521,andamento
+atendimento007.json,C007,F03,Boa tarde,gratitude,gratidão,0.8646,pendente
+atendimento007.json,C007,F03,Você pode acessar agora?,curiosity,curiosidade,0.7455,pendente
+atendimento007.json,C007,F03,Segunda vc faz,neutral,neutro,0.9931,pendente
+atendimento007.json,C007,F03,Pode sim,neutral,neutro,0.9903,andamento
+atendimento007.json,C007,F03,841851753,neutral,neutro,0.981,andamento
+atendimento007.json,C007,F03,"Deu sim, muito obrigado",gratitude,gratidão,0.9892,concluido
+atendimento007.json,C007,F03,"Tava precisando de usar o notebook kkkk, valeu",amusement,diversão,0.8661,concluido
+atendimento008.json,C008,F03,"Ola, boa noite",gratitude,gratidão,0.5691,pendente
+atendimento008.json,C008,F03,Td Bem?,neutral,neutro,0.843,pendente
+atendimento008.json,C008,F03,Uai...depende de vc...rs,amusement,diversão,0.924,pendente
+atendimento008.json,C008,F03,"Vc lembra do episódio do email infectado,né?!",curiosity,curiosidade,0.9036,pendente
+atendimento008.json,C008,F03,Os técnicos vieram da SRE e fizeram backup,neutral,neutro,0.9899,pendente
+atendimento008.json,C008,F03,Se fizer backup e não salvar uma pasta não dá pra recuperar nunca mais?!,confusion,confusão,0.6346,pendente
+atendimento008.json,C008,F03,Sim,approval,aprovação,0.8609,pendente
+atendimento008.json,C008,F03,Ele não fez backup de uma pasta do financeiro,neutral,neutro,0.9899,pendente
+atendimento008.json,C008,F03,Que raiva desse moço !!!,anger,raiva,0.9349,pendente
+atendimento008.json,C008,F03,Aí Jesus,neutral,neutro,0.8635,pendente
+atendimento009.json,C009,F03,Ok,neutral,neutro,0.9445,andamento
+atendimento009.json,C009,F03,Pronto,neutral,neutro,0.9837,andamento
+atendimento009.json,C009,F03,Umas duas vezes por dia,neutral,neutro,0.9926,andamento
+atendimento009.json,C009,F03,E o que precisa fazer?!,curiosity,curiosidade,0.8185,andamento
+atendimento009.json,C009,F03,Vem agora?!,neutral,neutro,0.9867,andamento
+atendimento009.json,C009,F03,"Bom dia, o computador reiniciou ontem novamente",joy,alegria,0.5746,andamento
+atendimento009.json,C009,F03,"Ah não, demora?",neutral,neutro,0.8034,andamento
+atendimento009.json,C009,F03,"Formatei ele aqui, vou entregar",neutral,neutro,0.99,concluido
+atendimento009.json,C009,F03,Certinho,neutral,neutro,0.988,concluido
+atendimento009.json,C009,F03,"E aí, a formatação deu certo?",curiosity,curiosidade,0.8783,concluido
+atendimento009.json,C009,F03,"Aparentemente deu sim, não reiniciou mais",neutral,neutro,0.7865,concluido
+atendimento009.json,C009,F03,"Muito bom, coisa boa",admiration,admiração,0.9772,concluido
+atendimento009.json,C009,F03,"Muito obrigado, depois eu mando o pagamento",gratitude,gratidão,0.9949,concluido
+atendimento010.json,C0010,F01,"Não está, veja se ela está aparecendo na lista de impressoras",neutral,neutro,0.9882,andamento
+atendimento010.json,C0010,F01,E te falo,neutral,neutro,0.9913,andamento
+atendimento010.json,C0010,F01,Deu certo aqui viu,approval,aprovação,0.8225,concluido
+atendimento010.json,C0010,F01,Muito obrigada,gratitude,gratidão,0.992,concluido
+atendimento011.json,C011,F01,Ok.,approval,aprovação,0.9571,andamento
+atendimento011.json,C011,F01,Qual etiqueta? não entendi,confusion,confusão,0.9331,andamento
+atendimento011.json,C011,F01,"Tá pedindo número de série, não é?",curiosity,curiosidade,0.5038,andamento
+atendimento011.json,C011,F01,"Pra eu imprimir no celular, é só baixar o aplicativo?",neutral,neutro,0.7689,andamento
+atendimento011.json,C011,F01,Onde eu instalo?,curiosity,curiosidade,0.6292,andamento
+atendimento011.json,C011,F01,"Ok, muito obrigado, o valor vejo com o (nome).",gratitude,gratidão,0.9921,concluido
+atendimento012.json,C012,F01,BOA TARDE,admiration,admiração,0.9132,pendente
+atendimento012.json,C012,F01,você esta na sala de assistência técnica?,curiosity,curiosidade,0.6548,pendente
+atendimento012.json,C012,F01,estou com problemas aqui na rádio,disappointment,decepção,0.6233,pendente
+atendimento012.json,C012,F01,um é aquele da impressora. Parece que vc tem que configurar,neutral,neutro,0.9918,pendente
+atendimento012.json,C012,F01,arrrumou não,neutral,neutro,0.9489,pendente
+atendimento012.json,C012,F01,1 306 456 481,neutral,neutro,0.9907,andamento
+atendimento012.json,C012,F01,Feito,neutral,neutro,0.9907,andamento
+atendimento012.json,C012,F01,"Deu sim, quanto foi?",neutral,neutro,0.8532,concluido
+atendimento012.json,C012,F01,"Perfeito então, brigadão!",neutral,neutro,0.6888,concluido
+atendimento013.json,C012,F02,Boa tarde,gratitude,gratidão,0.8646,pendente
+atendimento013.json,C012,F02,Preciso que olhem algo pra mim,desire,desejo,0.9202,pendente
+atendimento013.json,C012,F02,Não está funcionando a caixa de som,neutral,neutro,0.7711,pendente
+atendimento013.json,C012,F02,"sim, mas não sei se os cabos estão no lugar certo, poderia me ajudar?",confusion,confusão,0.7338,pendente
+atendimento013.json,C012,F02,Vou tentar aqui e já te falo,neutral,neutro,0.8415,andamento
+atendimento013.json,C012,F02,"Deu certo viu, muito obrigado!",gratitude,gratidão,0.9905,concluido
+atendimento014.json,C007,F03,"Bom dia, tô precisando formatar meu notebook, quanto é",neutral,neutro,0.7986,pendente
+atendimento014.json,C007,F03,"Tranquilo, preciso só amanhã mesmo",desire,desejo,0.6417,andamento
+atendimento014.json,C007,F03,"Perfeito, vou aí ainda de manhã, valeu!",admiration,admiração,0.7931,concluido
+atendimento015.json,C013,F02,"Aguardo, preciso imprimir algo urgente",desire,desejo,0.8515,pendente
+atendimento015.json,C013,F02,"Valeu demais, funcionando certinho agora!",admiration,admiração,0.5339,concluido
+atendimento016.json,C014,F03,"Oi, você consegue fazer uma limpeza no meu pc? Tá bem lento",curiosity,curiosidade,0.7926,pendente
+atendimento016.json,C014,F03,"Posso sim, passo aí de tarde",neutral,neutro,0.9106,pendente
+atendimento016.json,C014,F03,"Show, obrigado mesmo!",gratitude,gratidão,0.9884,concluido
+atendimento017.json,C002,F02,"Bom dia, minha internet parou de funcionar no pc, será que é rede ou máquina?",confusion,confusão,0.5698,pendente
+atendimento017.json,C002,F02,Consegue vir aqui olhar?,neutral,neutro,0.9201,pendente
+atendimento017.json,C002,F02,"Boa, obrigado pelo atendimento rápido, tudo ok",admiration,admiração,0.8296,concluido
+atendimento018.json,C007,F01,"Oi, (nome) me passou seu número",neutral,neutro,0.9838,pendente
+atendimento018.json,C007,F01,"Foi feito uma mudança nos lugares dos computadores aqui na empresa, você poderia vir aqui ajudar?",curiosity,curiosidade,0.9149,pendente
+atendimento018.json,C007,F01,"Ver se faltou algum cabo, instalar as impressoras novamente",neutral,neutro,0.9848,pendente
+atendimento018.json,C007,F01,Certinho,neutral,neutro,0.988,pendente
+atendimento018.json,C007,F01,Demora muito? Estamos parados aqui,neutral,neutro,0.8002,pendente
+atendimento018.json,C007,F01,"Muito obrigado, fico no aguardo",gratitude,gratidão,0.9918,pendente
+atendimento019.json,C015,F02,"Boa tarde (nome), lembra as peças que comprei?",curiosity,curiosidade,0.9287,pendente
+atendimento019.json,C015,F02,Elas chegaram hoje,neutral,neutro,0.9925,pendente
+atendimento019.json,C015,F02,Precisaria que pegassem elas aqui pra vcs montarem,neutral,neutro,0.8451,pendente
+atendimento019.json,C015,F02,"Tem sim, só vir",neutral,neutro,0.9809,pendente
+atendimento019.json,C015,F02,"Pode sim, tô em casa",neutral,neutro,0.978,concluido
+atendimento019.json,C015,F02,"Usei o pc aqui, ficou excelente!!!",admiration,admiração,0.9815,concluido
+atendimento019.json,C015,F02,Brigadão pelo serviço! Qual o preço?,neutral,neutro,0.8816,concluido
+atendimento020.json,C016,F01,"Oi, tudo bem? Meu computador não abre mais arquivos PDF, você consegue ver pra mim?",curiosity,curiosidade,0.869,pendente
+atendimento020.json,C016,F01,"Sim, o código é 135 476 729.",approval,aprovação,0.5632,pendente
+atendimento020.json,C016,F01,"Show de bola, abriu certinho aqui. Obrigado!",admiration,admiração,0.7058,concluido

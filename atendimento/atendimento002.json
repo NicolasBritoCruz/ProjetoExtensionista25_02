@@ -1,0 +1,132 @@
+[
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "empresa",
+    "mensagem": "Eu peguei seu notebook ontem",
+    "data": "2025-09-03",
+    "hora": "08:34",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "cliente",
+    "mensagem": "Bom dia! Fico no aguardo de atualizações, obrigada!",
+    "data": "2025-09-03",
+    "hora": "08:34",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "empresa",
+    "mensagem": "Boa tarde, o notebook ficou passando teste na sala, e funcionou tudo normalmente",
+    "data": "2025-09-03",
+    "hora": "13:13",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "empresa",
+    "mensagem": "O problema era qual mesmo? Não achava ou não funcionava o wi-fi?",
+    "data": "2025-09-03",
+    "hora": "13:13",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "cliente",
+    "mensagem": "Eu estava assistindo meus cursinhos, e desconectava do wi-fi sozinho",
+    "data": "2025-09-03",
+    "hora": "13:14",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "empresa",
+    "mensagem": "Ele ficou no wi-fi do escritório aqui a manhã inteira, sem desconectar",
+    "data": "2025-09-03",
+    "hora": "13:15",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "empresa",
+    "mensagem": "Vou fazer mais uns testes aqui e te falo, mas talvez o problema seja algo no roteador aí",
+    "data": "2025-09-03",
+    "hora": "13:15",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "cliente",
+    "mensagem": "Pode ser isso então, porque o roteador lá de casa é bem antigo",
+    "data": "2025-09-03",
+    "hora": "13:16",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "empresa",
+    "mensagem": "É, ficou passando vídeo no YouTube aqui desde essa hora",
+    "data": "2025-09-03",
+    "hora": "15:19",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "empresa",
+    "mensagem": "Acho melhor devolver e testar novamente aí pra ver, pq o notebook está ok",
+    "data": "2025-09-03",
+    "hora": "15:19",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "cliente",
+    "mensagem": "Certinho, qual o valor?",
+    "data": "2025-09-03",
+    "hora": "15:26",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "empresa",
+    "mensagem": "Pode testar primeiro, tem erro não",
+    "data": "2025-09-03",
+    "hora": "15:27",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F01",
+    "id_serviço": 2,
+    "autor": "cliente",
+    "mensagem": "Viu, muito obrigada mesmo!",
+    "data": "2025-09-03",
+    "hora": "15:30",
+    "estado_servico": "concluído"
+  }
+]

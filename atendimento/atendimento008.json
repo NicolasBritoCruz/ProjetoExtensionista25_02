@@ -1,0 +1,182 @@
+[
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "cliente",
+    "mensagem": "Ola, boa noite",
+    "data": "2025-08-12",
+    "hora": "19:09",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "cliente",
+    "mensagem": "Td Bem?",
+    "data": "2025-08-12",
+    "hora": "19:09",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "empresa",
+    "mensagem": "Tudo sim, e convosco?",
+    "data": "2025-08-12",
+    "hora": "19:13",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "cliente",
+    "mensagem": "Uai...depende de vc...rs",
+    "data": "2025-08-12",
+    "hora": "19:14",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "empresa",
+    "mensagem": "Oq ocorres?",
+    "data": "2025-08-12",
+    "hora": "19:14",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "cliente",
+    "mensagem": "Vc lembra do episódio do email infectado,né?!",
+    "data": "2025-08-12",
+    "hora": "19:23",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "cliente",
+    "mensagem": "Os técnicos vieram da SRE e fizeram backup",
+    "data": "2025-08-12",
+    "hora": "19:23",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "cliente",
+    "mensagem": "Se fizer backup e não salvar uma pasta não dá pra recuperar nunca mais?!",
+    "data": "2025-08-12",
+    "hora": "19:24",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "empresa",
+    "mensagem": "já formatou a máquina?",
+    "data": "2025-08-12",
+    "hora": "19:25",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "cliente",
+    "mensagem": "Sim",
+    "data": "2025-08-12",
+    "hora": "19:28",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "empresa",
+    "mensagem": "aí é complicado, até tem uns softwares para recuperação de dados",
+    "data": "2025-08-12",
+    "hora": "19:36",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "empresa",
+    "mensagem": "Mas não é garantia",
+    "data": "2025-08-12",
+    "hora": "19:37",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "cliente",
+    "mensagem": "Ele não fez backup de uma pasta do financeiro",
+    "data": "2025-08-12",
+    "hora": "19:37",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "empresa",
+    "mensagem": "mas é igual eu falei, depois que formata é difícil de recuperar",
+    "data": "2025-08-12",
+    "hora": "19:37",
+    "estado_servico": "pendente"
+ },
+ {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "cliente",
+    "mensagem": "Que raiva desse moço !!!",
+    "data": "2025-08-12",
+    "hora": "19:37",
+    "estado_servico": "pendente"
+  },
+ {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "empresa",
+    "mensagem": "o negócio é copiar sempre a mais",
+    "data": "2025-08-12",
+    "hora": "19:38",
+    "estado_servico": "pendente"
+  },
+ {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "empresa",
+    "mensagem": "pior que de financeiro é complicado hein",
+    "data": "2025-08-12",
+    "hora": "19:39",
+    "estado_servico": "pendente"
+  },
+ {
+    "id_cliente": "C008",
+    "id_funcionario": "F03",
+    "id_serviço": 8,
+    "autor": "cliente",
+    "mensagem": "Aí Jesus",
+    "data": "2025-08-12",
+    "hora": "19:39",
+    "estado_servico": "pendente"
+  }
+]

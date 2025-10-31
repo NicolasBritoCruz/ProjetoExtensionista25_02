@@ -1,0 +1,142 @@
+[
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "cliente",
+    "mensagem": "tudo em riba contigo? sabe me dizer se seu pai realiza reparo em placa mãe de not?",
+    "data": "2025-08-28",
+    "hora": "15:03",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "empresa",
+    "mensagem": "A gente não faz meu amigo, difícil achar alguém aqui que faz",
+    "data": "2025-08-28",
+    "hora": "15:08",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "cliente",
+    "mensagem": "não achei nenhum mesmo kk sabe de algum em cidade vizinha?",
+    "data": "2025-08-28",
+    "hora": "15:09",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "empresa",
+    "mensagem": "A gente manda pra um em vga, quer o contato?",
+    "data": "2025-08-28",
+    "hora": "15:09",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "cliente",
+    "mensagem": "Ficaria grato",
+    "data": "2025-08-28",
+    "hora": "15:10",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "cliente",
+    "mensagem": "seu pai sabe consertar ventoinha de placa de video? uma das 3 minhas parou de  rodar",
+    "data": "2025-08-28",
+    "hora": "15:11",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "empresa",
+    "mensagem": "Só se for lubrificação",
+    "data": "2025-08-28",
+    "hora": "15:12",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "cliente",
+    "mensagem": "uai se ele conseguir abrir pra mim ja é meio caminho andado",
+    "data": "2025-08-28",
+    "hora": "15:12",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "cliente",
+    "mensagem": "soltou uma borrachinha dela que não faz girar ai preciso apenas de abrir e voltar ela no lugar",
+    "data": "2025-08-28",
+    "hora": "15:13",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "cliente",
+    "mensagem": "Que horas posso levar o cooler pro seu pai dar uma olhada?",
+    "data": "2025-08-28",
+    "hora": "16:12",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "empresa",
+    "mensagem": "Eu não sei se a gente olha isso mestre, seria abrir a placa de vídeo?",
+    "data": "2025-08-28",
+    "hora": "16:14",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "cliente",
+    "mensagem": "No caso abrir o cooler",
+    "data": "2025-08-28",
+    "hora": "16:26",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "empresa",
+    "mensagem": "A gente não faz esse serviço, só lubrificação mesmo",
+    "data": "2025-08-28",
+    "hora": "16:39",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C003",
+    "id_funcionario": "F01",
+    "id_serviço": 3,
+    "autor": "cliente",
+    "mensagem": "Ah tranquilo mestre",
+    "data": "2025-08-28",
+    "hora": "18:07",
+    "estado_servico": "concluído"
+  }
+]

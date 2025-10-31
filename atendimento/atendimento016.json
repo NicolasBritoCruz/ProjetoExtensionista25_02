@@ -1,0 +1,72 @@
+[
+{
+    "id_cliente": "C014",
+    "id_funcionario": "F03",
+    "id_serviço": 16,
+    "autor": "cliente",
+    "mensagem": "Oi, você consegue fazer uma limpeza no meu pc? Tá bem lento",
+    "data": "2025-08-14",
+    "hora": "09:48",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C014",
+    "id_funcionario": "F03",
+    "id_serviço": 16,
+    "autor": "empresa",
+    "mensagem": "Consigo sim, pode trazer ainda hoje?",
+    "data": "2025-08-14",
+    "hora": "09:52",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C014",
+    "id_funcionario": "F03",
+    "id_serviço": 16,
+    "autor": "cliente",
+    "mensagem": "Posso sim, passo aí de tarde",
+    "data": "2025-08-14",
+    "hora": "09:55",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C014",
+    "id_funcionario": "F03",
+    "id_serviço": 16,
+    "autor": "empresa",
+    "mensagem": "Beleza, a gente já faz a limpeza completa",
+    "data": "2025-08-14",
+    "hora": "09:57",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C014",
+    "id_funcionario": "F03",
+    "id_serviço": 16,
+    "autor": "empresa",
+    "mensagem": "Já abri o pc aqui, tava bem cheio de poeira, limpei tudo e troquei a pasta térmica",
+    "data": "2025-08-15",
+    "hora": "14:30",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C014",
+    "id_funcionario": "F03",
+    "id_serviço": 16,
+    "autor": "empresa",
+    "mensagem": "Serviço concluído, desempenho voltou ao normal",
+    "data": "2025-08-15",
+    "hora": "14:58",
+    "estado_servico": "concluido"
+  },
+  {
+    "id_cliente": "C014",
+    "id_funcionario": "F03",
+    "id_serviço": 16,
+    "autor": "cliente",
+    "mensagem": "Show, obrigado mesmo!",
+    "data": "2025-08-15",
+    "hora": "15:10",
+    "estado_servico": "concluido"
+  }
+]

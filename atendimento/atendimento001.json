@@ -1,0 +1,352 @@
+[
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Vou precisar de levar meu Pc pra vc segunda kkkkk",
+    "data": "2025-08-30",
+    "hora": "11:43",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Pc não tá ligando, acho que é b.o no ssd",
+    "data": "2025-08-30",
+    "hora": "11:44",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Vish, tá dando alguma tela?",
+    "data": "2025-08-30",
+    "hora": "11:57",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "acho que pode ser o disco C, kakakakka",
+    "data": "2025-08-30",
+    "hora": "11:58",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Não tá dando boot",
+    "data": "2025-08-30",
+    "hora": "11:58",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Ele liga mas não aparece tela nenhuma",
+    "data": "2025-08-30",
+    "hora": "11:58",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Mas dá a tela de início?",
+    "data": "2025-08-30",
+    "hora": "11:59",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Nem dá, fica preta e em economia de energia no monitor",
+    "data": "2025-08-30",
+    "hora": "11:59",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Meu SSD de vez enquanto não reconhecia, mas era só o disco e kakakaka",
+    "data": "2025-08-30",
+    "hora": "12:00",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Segunda nois olha se vc quiser",
+    "data": "2025-08-30",
+    "hora": "12:00",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Quero sim, mando pra vcs ou preferem passar aqui?",
+    "data": "2025-08-30",
+    "hora": "12:00",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Podemos pegar na sua casa, oq for melhor pra vc",
+    "data": "2025-08-30",
+    "hora": "12:00",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Se puderem passar aqui",
+    "data": "2025-08-30",
+    "hora": "12:01",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Só passar o endereço e que horas pode ir",
+    "data": "2025-08-30",
+    "hora": "11:58",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Segunda podem chegar qualquer horário quase, já deixo no jeito",
+    "data": "2025-08-30",
+    "hora": "11:58",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Teu disco C tá lotado hein",
+    "data": "2025-09-01",
+    "hora": "13:54",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Tá KKKKKK, eu tinha que apagar umas coisas",
+    "data": "2025-09-01",
+    "hora": "13:55",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "O problema dele era qual mesmo? Tá ligado aqui",
+    "data": "2025-09-01",
+    "hora": "14:24",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Tá funcionando?",
+    "data": "2025-09-01",
+    "hora": "14:36",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Ele não aparecia nada na tela e ai ficava entrando em economia de energia",
+    "data": "2025-09-01",
+    "hora": "14:37",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Eu tirei ele da tomada aqui, vou deixar uns minutos e ligar novamente",
+    "data": "2025-09-01",
+    "hora": "15:04",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "De início ele deu uma tela, pedindo pra ligar na rede, nunca tinha visto ela inclusive kkkk",
+    "data": "2025-09-01",
+    "hora": "15:27",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Será que é meu monitor? Que tristeza",
+    "data": "2025-09-01",
+    "hora": "15:38",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "As vezes é viu",
+    "data": "2025-09-01",
+    "hora": "15:45",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Cara, fiz mais uns testes aqui, sem problema no teu pc",
+    "data": "2025-09-02",
+    "hora": "14:33",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Infelizmente acho que o problema vai ser meu monitor então",
+    "data": "2025-09-02",
+    "hora": "14:41",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Ou na tomada/filtro de linha",
+    "data": "2025-09-02",
+    "hora": "14:41",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Faz sentido",
+    "data": "2025-09-02",
+    "hora": "14:42",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Que horas tem gente na tua casa, pra eu deixar ele lá?",
+    "data": "2025-09-02",
+    "hora": "14:42",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Cara, se vc for agora pode deixar",
+    "data": "2025-09-02",
+    "hora": "14:43",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Quanto foi meu chegado?",
+    "data": "2025-09-02",
+    "hora": "14:44",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Testa primeiro aí, tem erro não",
+    "data": "2025-09-02",
+    "hora": "14:44",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "empresa",
+    "mensagem": "Eu deixo ele lá depois",
+    "data": "2025-09-02",
+    "hora": "14:44",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Muito obrigado, deu certo",
+    "data": "2025-09-02",
+    "hora": "23:39",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C001",
+    "id_funcionario": "F01",
+    "id_serviço": 1,
+    "autor": "cliente",
+    "mensagem": "Ligou de primeira",
+    "data": "2025-09-02",
+    "hora": "14:44",
+    "estado_servico": "concluído"
+  }
+]

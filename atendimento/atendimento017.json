@@ -1,0 +1,72 @@
+[
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F02",
+    "id_serviço": 17,
+    "autor": "cliente",
+    "mensagem": "Bom dia, minha internet parou de funcionar no pc, será que é rede ou máquina?",
+    "data": "2025-08-20",
+    "hora": "08:15",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F02",
+    "id_serviço": 17,
+    "autor": "empresa",
+    "mensagem": "Bom dia! Pode ser o cabo",
+    "data": "2025-08-20",
+    "hora": "08:18",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F02",
+    "id_serviço": 17,
+    "autor": "cliente",
+    "mensagem": "Consegue vir aqui olhar?",
+    "data": "2025-08-20",
+    "hora": "08:21",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F02",
+    "id_serviço": 17,
+    "autor": "empresa",
+    "mensagem": "Vou sim, levo o alicate, acho que é a ponteira",
+    "data": "2025-08-20",
+    "hora": "08:23",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F02",
+    "id_serviço": 17,
+    "autor": "empresa",
+    "mensagem": "Vi aqui, o cabo de rede tava com defeito, substituí e a conexão voltou",
+    "data": "2025-08-20",
+    "hora": "08:40",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F02",
+    "id_serviço": 17,
+    "autor": "empresa",
+    "mensagem": "Testa por favor",
+    "data": "2025-08-20",
+    "hora": "08:40",
+    "estado_servico": "concluido"
+  },
+  {
+    "id_cliente": "C002",
+    "id_funcionario": "F02",
+    "id_serviço": 17,
+    "autor": "cliente",
+    "mensagem": "Boa, obrigado pelo atendimento rápido, tudo ok",
+    "data": "2025-08-20",
+    "hora": "09:12",
+    "estado_servico": "concluido"
+  }
+]

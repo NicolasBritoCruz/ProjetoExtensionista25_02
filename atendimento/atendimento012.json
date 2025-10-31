@@ -1,0 +1,183 @@
+[
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "cliente",
+    "mensagem": "BOA TARDE",
+    "data": "2025-08-13",
+    "hora": "15:03",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "cliente",
+    "mensagem": "você esta na sala de assistência técnica?",
+    "data": "2025-08-13",
+    "hora": "15:04",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "empresa",
+    "mensagem": "por enquanto sim, tô fazendo umas notas fiscais",
+    "data": "2025-08-13",
+    "hora": "15:07",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "empresa",
+    "mensagem": "está precisando de algo?",
+    "data": "2025-08-13",
+    "hora": "15:08",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "cliente",
+    "mensagem": "estou com problemas aqui na rádio",
+    "data": "2025-08-13",
+    "hora": "15:08",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "cliente",
+    "mensagem": "um é aquele da impressora. Parece que vc tem que configurar",
+    "data": "2025-08-13",
+    "hora": "15:10",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "empresa",
+    "mensagem": "Eu achei que a impressora já tinham arrumado",
+    "data": "2025-08-13",
+    "hora": "15:19",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "cliente",
+    "mensagem": "arrrumou não",
+    "data": "2025-08-13",
+    "hora": "15:22",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "empresa",
+    "mensagem": "Da pra olhar por AnyDesk",
+    "data": "2025-08-13",
+    "hora": "15:22",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "empresa",
+    "mensagem": "A impressora é conectada no computador por um cabo?",
+    "data": "2025-08-13",
+    "hora": "15:25",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "cliente",
+    "mensagem": "1 306 456 481",
+    "data": "2025-08-13",
+    "hora": "15:25",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "empresa",
+    "mensagem": "O cabo que sai dela e vai pro computador, no caso",
+    "data": "2025-08-13",
+    "hora": "15:26",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "empresa",
+    "mensagem": "Tem que tirar ele, e colocar novamente",
+    "data": "2025-08-30",
+    "hora": "15:27",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "cliente",
+    "mensagem": "Feito",
+    "data": "2025-08-13",
+    "hora": "15:28",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "empresa",
+    "mensagem": "Deu certo?",
+    "data": "2025-08-13",
+    "hora": "15:30",
+    "estado_servico": "concluido"
+  },
+{
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "cliente",
+    "mensagem": "Deu sim, quanto foi?",
+    "data": "2025-08-13",
+    "hora": "15:38",
+    "estado_servico": "concluido"
+  },
+{
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "empresa",
+    "mensagem": "Depois o (nome) te passa o preço certinho",
+    "data": "2025-08-13",
+    "hora": "15:38",
+    "estado_servico": "concluido"
+  },
+{
+    "id_cliente": "C012",
+    "id_funcionario": "F01",
+    "id_serviço": 12,
+    "autor": "cliente",
+    "mensagem": "Perfeito então, brigadão!",
+    "data": "2025-08-13",
+    "hora": "15:40",
+    "estado_servico": "concluido"
+  }
+]
+  
