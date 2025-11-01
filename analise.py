@@ -94,7 +94,9 @@ else:
                                     "emocao_en": label_en,
                                     "emocao_pt": label_pt,
                                     "confianca": round(float(score), 4),
-                                    "estado_servico": entrada.get("estado_servico")
+                                    "estado_servico": entrada.get("estado_servico"),
+                                    "data": entrada.get("data"),
+                                    "hora": entrada.get("hora")
                                 })
             except Exception as e:
                 print(f"❌ Erro inesperado ao processar o arquivo '{arquivo}': {e}")

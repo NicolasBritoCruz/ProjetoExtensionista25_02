@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.graph_objects as go
 
 # --- CONFIGURAÇÃO INICIAL ---
 st.set_page_config(page_title="Análise de Emoções em Atendimentos", layout="wide")
@@ -22,48 +23,27 @@ except FileNotFoundError:
 
 # --- FILTRO NA SIDEBAR ---
 st.sidebar.header("🔍 Filtro por Funcionário")
-
-# Filtro por funcionário
 funcionarios = st.sidebar.multiselect(
     "Selecione o(s) funcionário(s):",
     options=df["id_funcionario"].unique(),
     default=df["id_funcionario"].unique()
 )
-
-# Aplica o filtro
 df_filtrado = df[df["id_funcionario"].isin(funcionarios)]
-
-st.markdown("---")
-
-# --- VISÃO GERAL ---
-st.subheader("📈 Visão Geral dos Atendimentos Filtrados")
-col1, col2, col3 = st.columns(3)
-
-col1.metric("Total de Mensagens", len(df_filtrado))
-col2.metric("Funcionários Analisados", df_filtrado["id_funcionario"].nunique())
-col3.metric("Emoções Únicas", df_filtrado["emocao_pt"].nunique())
 
 st.markdown("---")
 
 # --- GRÁFICO 1: Distribuição Geral de Emoções ---
 st.subheader("🎭 Distribuição de Emoções (Geral)")
-
 contagem = df_filtrado["emocao_pt"].value_counts()
 fig1, ax1 = plt.subplots(figsize=(6, 6))
-ax1.pie(
-    contagem,
-    labels=contagem.index,
-    autopct="%1.1f%%",
-    startangle=90,
-)
+ax1.pie(contagem, labels=None, startangle=90)
+ax1.legend(contagem.index, title="Emoções", loc="center left", bbox_to_anchor=(1, 0.5))
 ax1.axis("equal")
 st.pyplot(fig1)
 
 st.markdown("---")
-
 # --- GRÁFICO 2: Emoções por Funcionário ---
 st.subheader("👤 Emoções por Funcionário")
-
 fig2, ax2 = plt.subplots(figsize=(10, 5))
 sns.countplot(data=df_filtrado, x="id_funcionario", hue="emocao_pt", ax=ax2)
 ax2.set_xlabel("Funcionário")
@@ -73,9 +53,51 @@ st.pyplot(fig2)
 
 st.markdown("---")
 
+# --- GRÁFICO 3: Velocímetro de Eficiência por Funcionário ---
+st.subheader("⚡ Velocímetro de Eficiência por Funcionário")
+for func in df_filtrado["id_funcionario"].unique():
+    df_func = df_filtrado[df_filtrado["id_funcionario"] == func]
+    total = len(df_func)
+    resolvidos = len(df_func[df_func["estado_servico"] == "concluido"])
+    andamento = len(df_func[df_func["estado_servico"] == "andamento"])
+    eficiencia = (resolvidos + andamento) / total if total > 0 else 0
+
+    fig = go.Figure(go.Indicator(
+        mode="gauge+number",
+        value=eficiencia*100,
+        title={'text': f"{func}"},
+        gauge={'axis': {'range': [0, 100]}, 'bar': {'color': "green"}}
+    ))
+    st.plotly_chart(fig)
+
+st.markdown("---")
+
+# --- GRÁFICO 4: Barras de Satisfação Média ---
+st.subheader("📊 Satisfação Média por Funcionário")
+media_confianca = df_filtrado.groupby("id_funcionario")["confianca"].mean().reset_index()
+fig, ax = plt.subplots(figsize=(8,5))
+sns.barplot(x="id_funcionario", y="confianca", data=media_confianca, ax=ax, palette="turbo")
+ax.set_ylabel("Satisfação Média")
+ax.set_xlabel("Funcionário")
+st.pyplot(fig)
+
+st.markdown("---")
+
+# --- GRÁFICO 5: Sentimento ao Longo do Período ---
+st.subheader("📈 Sentimento ao Longo do Período")
+df_filtrado['data'] = pd.to_datetime(df_filtrado['data'])
+media_sentimento = df_filtrado.groupby('data')['confianca'].mean().reset_index()
+fig, ax = plt.subplots(figsize=(10,4))
+ax.plot(media_sentimento['data'], media_sentimento['confianca'], marker='o', color="red")
+ax.set_ylabel("Sentimento Médio")
+ax.set_xlabel("Data")
+ax.tick_params(axis='x', rotation=45)
+st.pyplot(fig)
+
+st.markdown("---")
+
 # --- TABELA DE EXEMPLOS DE MENSAGENS ---
 st.subheader("💬 Exemplos de Mensagens")
-
 amostra = df_filtrado.sample(min(5, len(df_filtrado))) if len(df_filtrado) > 0 else pd.DataFrame()
 st.dataframe(
     amostra[["mensagem", "emocao_pt", "confianca", "id_funcionario"]],
