@@ -333,6 +333,8 @@ if st.session_state.df.empty:
     st.sidebar.warning("Nenhum dado para filtrar.")
     funcionarios_selecionados = []
 else:
+    st.session_state.df = st.session_state.df.dropna(subset=["id_funcionario"])
+    st.session_state.df["id_funcionario"] = st.session_state.df["id_funcionario"].astype(str)
     opcoes_funcionarios = sorted(st.session_state.df["id_funcionario"].unique())
     funcionarios_selecionados = st.sidebar.multiselect(
         "Selecione o(s) funcionário(s):",
@@ -383,7 +385,8 @@ else:
         df_func = df_filtrado[df_filtrado["id_funcionario"] == func]
         total = len(df_func)
         resolvidos = len(df_func[df_func["estado_servico"] == "concluido"])
-        eficiencia = (resolvidos / total) * 100 if total > 0 else 0
+        andamento = len(df_func[df_func["estado_servico"] == "andamento"])
+        eficiencia = ((resolvidos + andamento) / total) * 100 if total > 0 else 0
 
         fig = go.Figure(go.Indicator(
             mode="gauge+number",
@@ -410,13 +413,89 @@ else:
     st.subheader("📊 Confiança Média da Emoção por Funcionário")
     media_confianca = df_filtrado.groupby("id_funcionario")["confianca"].mean().reset_index()
     fig, ax = plt.subplots(figsize=(8,5))
-    sns.barplot(x="id_funcionario", y="confianca", data=media_confianca, ax=ax, palette="turbo")
+    cores = ["#213635", "#348e91", "#1c5052"]
+    sns.barplot(x="id_funcionario", y="confianca", data=media_confianca, ax=ax, palette=cores)
     ax.set_ylabel("Confiança Média da Emoção")
     ax.set_xlabel("Funcionário")
     ax.set_ylim(0, 1) 
     st.pyplot(fig)
-
     st.markdown("---")
+
+    # --- GRÁFICO: Satisfação Média por Horário (rótulos HHh em ordem crescente) ---
+    st.subheader("🕒 Satisfação Média por Horário")
+
+    # Define emoções positivas/negativas (ajuste conforme seu mapa)
+    positivas = ["alegria", "gratidão", "otimismo", "amor", "diversão", "alívio", "orgulho", "admiração", "aprovação", "carinho", "excitação"]
+    negativas = ["tristeza", "raiva", "medo", "decepção", "desgosto", "remorso", "desaprovação"]
+
+    def polaridade(emo):
+        if emo in positivas: return 1
+        if emo in negativas: return -1
+        return 0
+
+    # Trabalha em cópia para não alterar df_filtrado globalmente
+    df_hora = df_filtrado.copy()
+
+    # aplica polaridade
+    df_hora["polaridade"] = df_hora["emocao_pt"].apply(polaridade)
+
+    # garante string e remove espaços
+    df_hora["hora_raw"] = df_hora["hora"].astype(str).str.strip()
+
+    # trata valores óbvios de vazio
+    df_hora.loc[df_hora["hora_raw"].str.lower().isin(["nan", "none", "", "na"]), "hora_raw"] = pd.NA
+
+    # extrai apenas a parte da hora antes do ":" (se existir), ou somente dígitos iniciais
+    # ex: "11:43" -> "11", "2025-08-30T11:43:00" -> "11", "9" -> "9"
+    hora_extraida = df_hora["hora_raw"].str.extract(r"^.*?(\d{1,2})(?=[:\D]|$)")[0]
+
+    # remove entradas sem captura
+    df_hora["hora_num"] = pd.to_numeric(hora_extraida, errors="coerce")
+
+    # filtra horas válidas 0-23
+    df_hora = df_hora[df_hora["hora_num"].between(0, 23, inclusive="both")].copy()
+    df_hora["hora_num"] = df_hora["hora_num"].astype(int)
+
+    # cria rótulo legível "HHh"
+    df_hora["hora_label"] = df_hora["hora_num"].apply(lambda x: f"{x:02d}h")
+
+    # Agrupa por hora_num (para garantir ordenação) e calcula média da polaridade
+    media_por_hora = (
+        df_hora.groupby(["hora_num", "hora_label"])["polaridade"]
+        .mean()
+        .reset_index()
+        .sort_values("hora_num")
+    )
+
+    # Se quiser manter todas as 24 horas no eixo (mesmo sem dados), descomente:
+    # all_hours = pd.DataFrame({"hora_num": range(0,24)})
+    # media_por_hora = all_hours.merge(media_por_hora, on="hora_num", how="left")
+    # media_por_hora["hora_label"] = media_por_hora["hora_num"].apply(lambda x: f"{x:02d}h")
+    # media_por_hora["polaridade"].fillna(0, inplace=True)
+
+    cores = [
+        "#122f51" if val > 0 else "#af162a" if val < 0 else "lightgray"
+        for val in media_por_hora["polaridade"]
+    ]   
+
+    # plota (usando labels ordenadas)
+    fig, ax = plt.subplots(figsize=(10,5))
+    sns.barplot(
+        data=media_por_hora,
+        x="hora_label",    # rótulos ordenados por hora_num
+        y="polaridade",
+        palette=cores,
+        ax=ax   
+    )
+    ax.axhline(0, color="gray", linestyle="--", linewidth=1)
+    ax.set_title("Satisfação Média por Horário", fontsize=14, weight="bold")
+    ax.set_xlabel("Hora do Dia")
+    ax.set_ylabel("Satisfação (média)")
+    ax.set_xticklabels(media_por_hora["hora_label"], rotation=45)
+
+    st.pyplot(fig)
+    st.markdown("---")
+
     st.subheader("📈 Confiança da Emoção ao Longo do Período")
     df_temp = df_filtrado.copy()
     try:
@@ -424,7 +503,7 @@ else:
         media_sentimento = df_temp.groupby('data')['confianca'].mean().reset_index()
         
         fig, ax = plt.subplots(figsize=(10,4))
-        ax.plot(media_sentimento['data'], media_sentimento['confianca'], marker='o', color="red")
+        ax.plot(media_sentimento['data'], media_sentimento['confianca'], marker='o', color="#af162a")
         ax.set_ylabel("Confiança Média")
         ax.set_xlabel("Data")
         ax.tick_params(axis='x', rotation=45)
@@ -439,7 +518,7 @@ else:
     amostra = df_filtrado.sample(min(10, len(df_filtrado))) if len(df_filtrado) > 0 else pd.DataFrame()
     
     st.dataframe(
-        amostra[["data", "hora", "id_funcionario", "id_serviço", "mensagem", "emocao_pt", "confianca", "observacao", "arquivo"]],
+        amostra[["data", "hora", "id_funcionario", "id_serviço", "mensagem", "emocao_pt", "confianca", "arquivo"]],
         hide_index=True,
         use_container_width=True
     )
