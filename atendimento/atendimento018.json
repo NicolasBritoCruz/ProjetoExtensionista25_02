@@ -2,7 +2,7 @@
 {
     "id_cliente": "C007",
     "id_funcionario": "F01",
-    "id_serviço": 18,
+    "id_serviço": "S018",
     "autor": "cliente",
     "mensagem": "Oi, (nome) me passou seu número",
     "data": "2025-08-09",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F01",
-    "id_serviço": 18,
+    "id_serviço": "S018",
     "autor": "empresa",
     "mensagem": "Bom dia",
     "data": "2025-08-09",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F01",
-    "id_serviço": 18,
+    "id_serviço": "S018",
     "autor": "cliente",
     "mensagem": "Foi feito uma mudança nos lugares dos computadores aqui na empresa, você poderia vir aqui ajudar?",
     "data": "2025-08-09",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F01",
-    "id_serviço": 18,
+    "id_serviço": "S018",
     "autor": "cliente",
     "mensagem": "Ver se faltou algum cabo, instalar as impressoras novamente",
     "data": "2025-08-09",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F01",
-    "id_serviço": 18,
+    "id_serviço": "S018",
     "autor": "empresa",
     "mensagem": "Vou sim, só acabar o serviço que estou fazendo aqui e já vou",
     "data": "2025-08-09",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F01",
-    "id_serviço": 18,
+    "id_serviço": "S018",
     "autor": "cliente",
     "mensagem": "Certinho",
     "data": "2025-08-09",
@@ -62,7 +62,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F01",
-    "id_serviço": 18,
+    "id_serviço": "S018",
     "autor": "cliente",
     "mensagem": "Demora muito? Estamos parados aqui",
     "data": "2025-08-09",
@@ -72,7 +72,7 @@
  {
     "id_cliente": "C007",
     "id_funcionario": "F01",
-    "id_serviço": 18,
+    "id_serviço": "S018",
     "autor": "empresa",
     "mensagem": "Não não, já chego",
     "data": "2025-08-09",
@@ -82,7 +82,7 @@
  {
     "id_cliente": "C007",
     "id_funcionario": "F01",
-    "id_serviço": 18,
+    "id_serviço": "S018",
     "autor": "cliente",
     "mensagem": "Muito obrigado, fico no aguardo",
     "data": "2025-08-09",

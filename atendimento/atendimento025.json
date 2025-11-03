@@ -1,0 +1,32 @@
+ [ 
+  {
+    "id_cliente": "C021",
+    "id_funcionario": "F01",
+    "id_serviço": "S025",
+    "autor": "cliente",
+    "mensagem": "Bom dia!!! Meu computador tá desligando sozinho",
+    "data": "2025-09-15",
+    "hora": "10:05",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C021",
+    "id_funcionario": "F01",
+    "id_serviço": "S025",
+    "autor": "empresa",
+    "mensagem": "Pode ser poeira no cooler, to por perto e com ferramenta na mochila, já chego aí",
+    "data": "2025-09-15",
+    "hora": "10:07",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C021",
+    "id_funcionario": "F01",
+    "id_serviço": "S025",
+    "autor": "empresa",
+    "mensagem": "Aguardo",
+    "data": "2025-09-15",
+    "hora": "10:10",
+    "estado_servico": "concluído"
+  }
+]

@@ -2,7 +2,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "cliente",
     "mensagem": "O computador do caixa não quer imprimir na impressora do escritório",
     "data": "2025-08-25",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "empresa",
     "mensagem": "Opa, chegando na sala eu conecto aí",
     "data": "2025-08-25",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "empresa",
     "mensagem": "Dá pra conectar agora?",
     "data": "2025-08-25",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "cliente",
     "mensagem": "Já te passo",
     "data": "2025-08-25",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "empresa",
     "mensagem": "Se puder passar da onde ela está localmente, ajuda também",
     "data": "2025-08-25",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "cliente",
     "mensagem": "1262843995",
     "data": "2025-08-25",
@@ -62,7 +62,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "cliente",
     "mensagem": "1762443894",
     "data": "2025-08-25",
@@ -72,7 +72,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "empresa",
     "mensagem": "Vou precisar reiniciar esse",
     "data": "2025-08-25",
@@ -82,7 +82,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "cliente",
     "mensagem": "ok",
     "data": "2025-08-25",
@@ -92,7 +92,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "empresa",
     "mensagem": "Saiu uma folha?",
     "data": "2025-08-25",
@@ -102,7 +102,7 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "cliente",
     "mensagem": "Sim",
     "data": "2025-08-25",
@@ -112,21 +112,21 @@
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "empresa",
     "mensagem": "Então deu certo",
     "data": "2025-08-25",
     "hora": "13:37",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C004",
     "id_funcionario": "F02",
-    "id_serviço": 4,
+    "id_serviço": "S004",
     "autor": "cliente",
     "mensagem": "Ok, muito obrigado!",
     "data": "2025-08-25",
     "hora": "13:37",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   }
 ]

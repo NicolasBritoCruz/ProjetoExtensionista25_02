@@ -2,7 +2,7 @@
 {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "cliente",
     "mensagem": "Boa tarde (nome), lembra as peças que comprei?",
     "data": "2025-08-23",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "cliente",
     "mensagem": "Elas chegaram hoje",
     "data": "2025-08-23",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "cliente",
     "mensagem": "Precisaria que pegassem elas aqui pra vcs montarem",
     "data": "2025-08-23",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "empresa",
     "mensagem": "Opaa, certinho, tem gente em casa o dia inteiro?",
     "data": "2025-08-23",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "cliente",
     "mensagem": "Tem sim, só vir",
     "data": "2025-08-23",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "empresa",
     "mensagem": "Certinho",
     "data": "2025-08-23",
@@ -62,61 +62,61 @@
   {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "empresa",
     "mensagem": "Finalizamos a montagem aqui",
     "data": "2025-08-24",
     "hora": "10:10",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
  {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "empresa",
     "mensagem": "Pode entregar?",
     "data": "2025-08-24",
     "hora": "10:15",
-    "estado_servico": "condluido"
+    "estado_servico": "concluído"
   },
  {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "cliente",
     "mensagem": "Pode sim, tô em casa",
     "data": "2025-08-24",
     "hora": "10:15",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
  {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "cliente",
     "mensagem": "Usei o pc aqui, ficou excelente!!!",
     "data": "2025-08-24",
     "hora": "13:15",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
  {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "cliente",
     "mensagem": "Brigadão pelo serviço! Qual o preço?",
     "data": "2025-08-24",
     "hora": "13:15",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
  {
     "id_cliente": "C015",
     "id_funcionario": "F02",
-    "id_serviço": 19,
+    "id_serviço": "S019",
     "autor": "empresa",
     "mensagem": "(Nome) vai te mandar mensagem pra ver",
     "data": "2025-08-24",
     "hora": "13:35",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   }
 ]

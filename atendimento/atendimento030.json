@@ -1,0 +1,73 @@
+[
+  {
+    "id_cliente": "C024",
+    "id_funcionario": "F02",
+    "id_serviço": "S030",
+    "autor": "cliente",
+    "mensagem": "Boa tarde",
+    "data": "2025-09-30",
+    "hora": "14:03",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C024",
+    "id_funcionario": "F02",
+    "id_serviço": "S030",
+    "autor": "cliente",
+    "mensagem": "Não tá reconhecendo meu HD externo aqui",
+    "data": "2025-09-30",
+    "hora": "14:03",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C024",
+    "id_funcionario": "F02",
+    "id_serviço": "S030",
+    "autor": "cliente",
+    "mensagem": "Já troquei de porta, e nada",
+    "data": "2025-09-30",
+    "hora": "14:04",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C024",
+    "id_funcionario": "F02",
+    "id_serviço": "S030",
+    "autor": "empresa",
+    "mensagem": "Opaa",
+    "data": "2025-09-30",
+    "hora": "14:23",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C024",
+    "id_funcionario": "F02",
+    "id_serviço": "S030",
+    "autor": "empresa",
+    "mensagem": "To pertinho daí",
+    "data": "2025-09-30",
+    "hora": "14:23",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C024",
+    "id_funcionario": "F02",
+    "id_serviço": "S030",
+    "autor": "empresa",
+    "mensagem": "Vou levar um cabo USB",
+    "data": "2025-09-30",
+    "hora": "14:23",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C024",
+    "id_funcionario": "F02",
+    "id_serviço": "S030",
+    "autor": "cliente",
+    "mensagem": "Blz, fico no aguardo",
+    "data": "2025-09-30",
+    "hora": "14:30",
+    "estado_servico": "pendente"
+  }
+]
+  

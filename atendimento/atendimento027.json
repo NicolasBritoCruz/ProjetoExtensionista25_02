@@ -1,0 +1,103 @@
+[
+  {
+    "id_cliente": "C022",
+    "id_funcionario": "F02",
+    "id_serviço": "S027",
+    "autor": "cliente",
+    "mensagem": "Boa tarde",
+    "data": "2025-09-12",
+    "hora": "16:21",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C022",
+    "id_funcionario": "F02",
+    "id_serviço": "S027",
+    "autor": "cliente",
+    "mensagem": "Minha impressora parou de puxar papel",
+    "data": "2025-09-12",
+    "hora": "16:21",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C022",
+    "id_funcionario": "F02",
+    "id_serviço": "S027",
+    "autor": "cliente",
+    "mensagem": "Vocês olham isso?",
+    "data": "2025-09-12",
+    "hora": "16:28",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C022",
+    "id_funcionario": "F02",
+    "id_serviço": "S027",
+    "autor": "empresa",
+    "mensagem": "Boa tarde",
+    "data": "2025-09-12",
+    "hora": "16:30",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C022",
+    "id_funcionario": "F02",
+    "id_serviço": "S027",
+    "autor": "empresa",
+    "mensagem": "Pior que a gente não olha defeito físico de impressora",
+    "data": "2025-09-12",
+    "hora": "16:30",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C022",
+    "id_funcionario": "F02",
+    "id_serviço": "S027",
+    "autor": "empresa",
+    "mensagem": "Só instalação e configuração",
+    "data": "2025-09-12",
+    "hora": "16:30",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C022",
+    "id_funcionario": "F02",
+    "id_serviço": "S027",
+    "autor": "cliente",
+    "mensagem": "Tem alguem que vocês indicam?",
+    "data": "2025-09-12",
+    "hora": "16:39",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C022",
+    "id_funcionario": "F02",
+    "id_serviço": "S027",
+    "autor": "empresa",
+    "mensagem": "A gente costuma passar pro (nome)",
+    "data": "2025-09-12",
+    "hora": "16:40",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C022",
+    "id_funcionario": "F02",
+    "id_serviço": "S027",
+    "autor": "cliente",
+    "mensagem": "Certinho, vou chamar ele",
+    "data": "2025-09-12",
+    "hora": "16:45",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C022",
+    "id_funcionario": "F02",
+    "id_serviço": "S027",
+    "autor": "cliente",
+    "mensagem": "Muito obrigado",
+    "data": "2025-09-12",
+    "hora": "16:45",
+    "estado_servico": "pendente"
+  }
+]
+  

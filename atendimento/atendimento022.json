@@ -1,0 +1,62 @@
+[  
+{
+    "id_cliente": "C018",
+    "id_funcionario": "F03",
+    "id_serviço": "S022",
+    "autor": "cliente",
+    "mensagem": "Não consigo acessar o site do gov, sempre fala erro de certificado",
+    "data": "2025-09-07",
+    "hora": "08:31",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C018",
+    "id_funcionario": "F03",
+    "id_serviço": "S022",
+    "autor": "empresa",
+    "mensagem": "Tá usando qual navegador?",
+    "data": "2025-09-07",
+    "hora": "08:32",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C018",
+    "id_funcionario": "F03",
+    "id_serviço": "S022",
+    "autor": "cliente",
+    "mensagem": "Chrome",
+    "data": "2025-09-07",
+    "hora": "08:33",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C018",
+    "id_funcionario": "F03",
+    "id_serviço": "S022",
+    "autor": "empresa",
+    "mensagem": "Vou acessar via Anydesk e ajustar seu certificado",
+    "data": "2025-09-07",
+    "hora": "08:35",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C018",
+    "id_funcionario": "F03",
+    "id_serviço": "S022",
+    "autor": "empresa",
+    "mensagem": "Consegui abrir, já tá funcionando",
+    "data": "2025-09-07",
+    "hora": "08:45",
+    "estado_servico": "concluído"
+  },
+  {
+    "id_cliente": "C018",
+    "id_funcionario": "F03",
+    "id_serviço": "S022",
+    "autor": "cliente",
+    "mensagem": "Boa, valeu demais",
+    "data": "2025-09-07",
+    "hora": "08:46",
+    "estado_servico": "concluído"
+  }
+]

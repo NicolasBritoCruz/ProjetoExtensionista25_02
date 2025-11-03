@@ -1,0 +1,53 @@
+  
+[
+  {
+    "id_cliente": "C020",
+    "id_funcionario": "F02",
+    "id_serviço": "S024",
+    "autor": "cliente",
+    "mensagem": "A internet aqui tá caindo toda hora, será que é meu roteador?",
+    "data": "2025-09-12",
+    "hora": "15:44",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C020",
+    "id_funcionario": "F02",
+    "id_serviço": "S024",
+    "autor": "empresa",
+    "mensagem": "Pode ser, já reiniciou ele?",
+    "data": "2025-09-12",
+    "hora": "15:45",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C020",
+    "id_funcionario": "F02",
+    "id_serviço": "S024",
+    "autor": "cliente",
+    "mensagem": "Ainda não, só tirar da tomada e colocar novamente né?",
+    "data": "2025-09-12",
+    "hora": "15:46",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C020",
+    "id_funcionario": "F02",
+    "id_serviço": "S024",
+    "autor": "empresa",
+    "mensagem": "Isso",
+    "data": "2025-09-12",
+    "hora": "15:47",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C020",
+    "id_funcionario": "F02",
+    "id_serviço": "S024",
+    "autor": "cliente",
+    "mensagem": "Funcionou, ainda bem, tava tudo parado aqui!",
+    "data": "2025-09-13",
+    "hora": "15:50",
+    "estado_servico": "concluído"
+  }
+]

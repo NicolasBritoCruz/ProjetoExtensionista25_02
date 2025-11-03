@@ -2,7 +2,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "cliente",
     "mensagem": "tudo em riba contigo? sabe me dizer se seu pai realiza reparo em placa mãe de not?",
     "data": "2025-08-28",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "empresa",
     "mensagem": "A gente não faz meu amigo, difícil achar alguém aqui que faz",
     "data": "2025-08-28",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "cliente",
     "mensagem": "não achei nenhum mesmo kk sabe de algum em cidade vizinha?",
     "data": "2025-08-28",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "empresa",
     "mensagem": "A gente manda pra um em vga, quer o contato?",
     "data": "2025-08-28",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "cliente",
     "mensagem": "Ficaria grato",
     "data": "2025-08-28",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "cliente",
     "mensagem": "seu pai sabe consertar ventoinha de placa de video? uma das 3 minhas parou de  rodar",
     "data": "2025-08-28",
@@ -62,7 +62,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "empresa",
     "mensagem": "Só se for lubrificação",
     "data": "2025-08-28",
@@ -72,7 +72,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "cliente",
     "mensagem": "uai se ele conseguir abrir pra mim ja é meio caminho andado",
     "data": "2025-08-28",
@@ -82,7 +82,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "cliente",
     "mensagem": "soltou uma borrachinha dela que não faz girar ai preciso apenas de abrir e voltar ela no lugar",
     "data": "2025-08-28",
@@ -92,7 +92,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "cliente",
     "mensagem": "Que horas posso levar o cooler pro seu pai dar uma olhada?",
     "data": "2025-08-28",
@@ -102,7 +102,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "empresa",
     "mensagem": "Eu não sei se a gente olha isso mestre, seria abrir a placa de vídeo?",
     "data": "2025-08-28",
@@ -112,7 +112,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "cliente",
     "mensagem": "No caso abrir o cooler",
     "data": "2025-08-28",
@@ -122,7 +122,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "empresa",
     "mensagem": "A gente não faz esse serviço, só lubrificação mesmo",
     "data": "2025-08-28",
@@ -132,7 +132,7 @@
   {
     "id_cliente": "C003",
     "id_funcionario": "F01",
-    "id_serviço": 3,
+    "id_serviço": "S003",
     "autor": "cliente",
     "mensagem": "Ah tranquilo mestre",
     "data": "2025-08-28",

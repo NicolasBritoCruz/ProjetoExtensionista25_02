@@ -2,7 +2,7 @@
   {
     "id_cliente": "C013",
     "id_funcionario": "F02",
-    "id_serviço": 15,
+    "id_serviço": "S015",
     "autor": "cliente",
     "mensagem": "Boa tarde, minha impressora parou de imprimir",
     "data": "2025-08-10",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C013",
     "id_funcionario": "F02",
-    "id_serviço": 15,
+    "id_serviço": "S015",
     "autor": "empresa",
     "mensagem": "Boa tarde! Passo aí pra dar uma olhada",
     "data": "2025-08-10",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C013",
     "id_funcionario": "F02",
-    "id_serviço": 15,
+    "id_serviço": "S015",
     "autor": "cliente",
     "mensagem": "Aguardo, preciso imprimir algo urgente",
     "data": "2025-08-10",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C013",
     "id_funcionario": "F02",
-    "id_serviço": 15,
+    "id_serviço": "S015",
     "autor": "empresa",
     "mensagem": "Jajá eu chego",
     "data": "2025-08-10",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C013",
     "id_funcionario": "F02",
-    "id_serviço": 15,
+    "id_serviço": "S015",
     "autor": "empresa",
     "mensagem": "Cheguei",
     "data": "2025-08-10",
@@ -52,21 +52,21 @@
   {
     "id_cliente": "C013",
     "id_funcionario": "F02",
-    "id_serviço": 15,
+    "id_serviço": "S015",
     "autor": "empresa",
     "mensagem": "Impressora funcionando normal",
     "data": "2025-08-10",
     "hora": "14:58",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C013",
     "id_funcionario": "F02",
-    "id_serviço": 15,
+    "id_serviço": "S015",
     "autor": "cliente",
     "mensagem": "Valeu demais, funcionando certinho agora!",
     "data": "2025-08-10",
     "hora": "15:00",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   }
 ]

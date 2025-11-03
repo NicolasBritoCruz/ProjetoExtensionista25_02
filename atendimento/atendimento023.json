@@ -1,0 +1,52 @@
+[
+{
+    "id_cliente": "C019",
+    "id_funcionario": "F01",
+    "id_serviço": "S023",
+    "autor": "cliente",
+    "mensagem": "Meu monitor apagou do nada, não acende mais nada",
+    "data": "2025-09-10",
+    "hora": "15:12",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C019",
+    "id_funcionario": "F01",
+    "id_serviço": "S023",
+    "autor": "empresa",
+    "mensagem": "Chegou a testar outro cabo de energia?",
+    "data": "2025-09-10",
+    "hora": "15:14",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C019",
+    "id_funcionario": "F01",
+    "id_serviço": "S023",
+    "autor": "cliente",
+    "mensagem": "Não tenho aqui, só o que veio junto",
+    "data": "2025-09-10",
+    "hora": "15:15",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C019",
+    "id_funcionario": "F01",
+    "id_serviço": "S023",
+    "autor": "empresa",
+    "mensagem": "Hoje tá apertado aqui, passo aí amanhã com um cabo pra testar",
+    "data": "2025-09-10",
+    "hora": "15:16",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C019",
+    "id_funcionario": "F01",
+    "id_serviço": "S023",
+    "autor": "empresa",
+    "mensagem": "Certinho, fico no aguardo",
+    "data": "2025-09-10",
+    "hora": "15:20",
+    "estado_servico": "concluído"
+  }
+]

@@ -2,7 +2,7 @@
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "empresa",
     "mensagem": "Bom dia, eu instalei a impressora pra você ontem",
     "data": "2025-08-04",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "empresa",
     "mensagem": "Não tá imprimindo?",
     "data": "2025-08-04",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "cliente",
     "mensagem": "Bom dia",
     "data": "2025-08-04",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "cliente",
     "mensagem": "Não está, veja se ela está aparecendo na lista de impressoras",
     "data": "2025-08-04",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "empresa",
     "mensagem": "Olhei aqui",
     "data": "2025-08-04",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "empresa",
     "mensagem": "Ela está sim, é essa Brother aí, a última",
     "data": "2025-08-04",
@@ -62,7 +62,7 @@
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "cliente",
     "mensagem": "Vou fazer um teste aqui",
     "data": "2025-08-04",
@@ -72,7 +72,7 @@
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "cliente",
     "mensagem": "E te falo",
     "data": "2025-08-04",
@@ -82,7 +82,7 @@
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "empresa",
     "mensagem": "Aguardo",
     "data": "2025-08-04",
@@ -92,31 +92,31 @@
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "cliente",
     "mensagem": "Deu certo aqui viu",
     "data": "2025-08-04",
     "hora": "10:27",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "cliente",
     "mensagem": "Muito obrigada",
     "data": "2025-08-04",
     "hora": "10:36",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C0010",
     "id_funcionario": "F01",
-    "id_serviço": 10,
+    "id_serviço": "S010",
     "autor": "empresa",
     "mensagem": "As ordens",
     "data": "2025-08-04",
     "hora": "10:37",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   }
 ]

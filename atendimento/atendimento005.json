@@ -2,7 +2,7 @@
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "cliente",
     "mensagem": "Boa tarde",
     "data": "2025-08-21",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "cliente",
     "mensagem": "Tô com um probleminha no office, aqui, pode me ajudar?",
     "data": "2025-08-21",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "empresa",
     "mensagem": "Opaa, consegue passar o Anydesk?",
     "data": "2025-08-21",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "cliente",
     "mensagem": "841721352",
     "data": "2025-08-21",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "empresa",
     "mensagem": "Qual o problema?",
     "data": "2025-08-21",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "cliente",
     "mensagem": "Quando eu colo esse conteúdo, trava a edição",
     "data": "2025-08-21",
@@ -62,7 +62,7 @@
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "empresa",
     "mensagem": "Entendi, vou ver",
     "data": "2025-08-21",
@@ -72,7 +72,7 @@
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "empresa",
     "mensagem": "Testa por favor",
     "data": "2025-08-21",
@@ -82,51 +82,51 @@
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "cliente",
     "mensagem": "Deu certo, oq era?",
     "data": "2025-08-21",
     "hora": "09:32",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "empresa",
     "mensagem": "O formato que os dados estavam vindo",
     "data": "2025-08-21",
     "hora": "09:36",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "cliente",
     "mensagem": "Muito obrigado, qual o valor?",
     "data": "2025-08-21",
     "hora": "09:36",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "empresa",
     "mensagem": "Pode ver com o (nome)",
     "data": "2025-08-21",
     "hora": "09:37",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C005",
     "id_funcionario": "F02",
-    "id_serviço": 5,
+    "id_serviço": "S005",
     "autor": "cliente",
     "mensagem": "Certinho, obrigado novamente",
     "data": "2025-08-21",
     "hora": "09:37",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   }
 ]

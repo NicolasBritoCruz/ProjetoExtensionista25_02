@@ -1,0 +1,93 @@
+[
+  {
+    "id_cliente": "C023",
+    "id_funcionario": "F01",
+    "id_serviço": "S028",
+    "autor": "cliente",
+    "mensagem": "Bom dia, meu computador está reiniciando sozinho",
+    "data": "2025-09-26",
+    "hora": "10:43",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C023",
+    "id_funcionario": "F01",
+    "id_serviço": "S028",
+    "autor": "cliente",
+    "mensagem": "Bom dia",
+    "data": "2025-09-26",
+    "hora": "10:51",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C023",
+    "id_funcionario": "F01",
+    "id_serviço": "S028",
+    "autor": "cliente",
+    "mensagem": "Desde quando ele tá assim?",
+    "data": "2025-09-26",
+    "hora": "10:51",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C023",
+    "id_funcionario": "F01",
+    "id_serviço": "S028",
+    "autor": "empresa",
+    "mensagem": "Ele já reinicia faz um tempinho, mas agora tá quase toda hora",
+    "data": "2025-09-26",
+    "hora": "10:53",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C023",
+    "id_funcionario": "F01",
+    "id_serviço": "S028",
+    "autor": "empresa",
+    "mensagem": "Impossível trabalhar",
+    "data": "2025-09-26",
+    "hora": "10:53",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C023",
+    "id_funcionario": "F01",
+    "id_serviço": "S028",
+    "autor": "empresa",
+    "mensagem": "Vou passar aí pra pegar ele",
+    "data": "2025-09-26",
+    "hora": "11:00",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C023",
+    "id_funcionario": "F01",
+    "id_serviço": "S028",
+    "autor": "cliente",
+    "mensagem": "Provavelmente é fonte, ou aquecimento",
+    "data": "2025-09-26",
+    "hora": "11:00",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C023",
+    "id_funcionario": "F01",
+    "id_serviço": "S028",
+    "autor": "empresa",
+    "mensagem": "Tá, fico no aguardo!",
+    "data": "2025-09-26",
+    "hora": "11:04",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C023",
+    "id_funcionario": "F01",
+    "id_serviço": "S028",
+    "autor": "cliente",
+    "mensagem": "Muito obrigada!",
+    "data": "2025-09-26",
+    "hora": "11:05",
+    "estado_servico": "pendente"
+  }
+]
+  

@@ -2,7 +2,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "empresa",
     "mensagem": "Boa tarde, (nome) aqui... Tava olhando os dados do computador pra poder salvar",
     "data": "2025-08-18",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "cliente",
     "mensagem": "Opa, boa tarde",
     "data": "2025-08-18",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "empresa",
     "mensagem": "Eu vi que ele tem uma pasta de nome dados, com um tanto de usuário, salva tudo?",
     "data": "2025-08-18",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "cliente",
     "mensagem": "Nem sabia que tinha, mas pode salvar",
     "data": "2025-08-18",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "cliente",
     "mensagem": "Vai que é algo importante, rsrsrs",
     "data": "2025-08-18",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "empresa",
     "mensagem": "Tem bastante coisa viu, NF, planilhas",
     "data": "2025-08-18",
@@ -62,7 +62,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "empresa",
     "mensagem": "Eu salvo aqui",
     "data": "2025-08-18",
@@ -72,7 +72,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "cliente",
     "mensagem": "Bom diaa",
     "data": "2025-08-19",
@@ -82,7 +82,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "cliente",
     "mensagem": "Tá dando trampo aí amigo??",
     "data": "2025-08-19",
@@ -92,7 +92,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "empresa",
     "mensagem": "Boa tarde, eu vou ver com o pessoal lá na sala, pq na realidade eu só trabalhei o dia que eu fui aí, eu tô de férias, fui só pra cobrir meu pai que não trabalhou no dia",
     "data": "2025-08-19",
@@ -102,7 +102,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "empresa",
     "mensagem": "Confirmo com ele aqui, ou vc manda msg direto pra ele?",
     "data": "2025-08-19",
@@ -112,7 +112,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "cliente",
     "mensagem": "Ahhhh beleza",
     "data": "2025-08-19",
@@ -122,7 +122,7 @@
   {
     "id_cliente": "C006",
     "id_funcionario": "F02",
-    "id_serviço": 6,
+    "id_serviço": "S006",
     "autor": "cliente",
     "mensagem": "Eu mando, pode deixar",
     "data": "2025-08-19",

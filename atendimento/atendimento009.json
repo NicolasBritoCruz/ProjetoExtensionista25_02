@@ -2,7 +2,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "Bom dia, estou conectado aí no computador de vocês",
     "data": "2025-08-09",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "Voce consegue reiniciar ele daí? Daqui não está dando certo",
     "data": "2025-08-09",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Ok",
     "data": "2025-08-09",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "Quando reiniciar avisa por favor, aí eu conecto novamente",
     "data": "2025-08-09",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Pronto",
     "data": "2025-08-09",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "Ele dá essas travadas com qual frequência?",
     "data": "2025-08-09",
@@ -62,7 +62,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Umas duas vezes por dia",
     "data": "2025-08-09",
@@ -72,7 +72,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "Eu vou fazer uns testes aqui, já te falo",
     "data": "2025-08-09",
@@ -82,7 +82,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "É temperatura, ele tá esquentando",
     "data": "2025-08-09",
@@ -92,7 +92,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "E o que precisa fazer?!",
     "data": "2025-08-09",
@@ -102,7 +102,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "Eu vou aí",
     "data": "2025-08-09",
@@ -112,7 +112,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "Tentar resolver aí mesmo, se não, vai ter que trazer",
     "data": "2025-08-09",
@@ -122,7 +122,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Vem agora?!",
     "data": "2025-08-09",
@@ -132,7 +132,7 @@
   {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "Daqui a pouco eu chego aí",
     "data": "2025-08-09",
@@ -142,7 +142,7 @@
  {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Bom dia, o computador reiniciou ontem novamente",
     "data": "2025-08-10",
@@ -152,7 +152,7 @@
  {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "Conversei com o (nome) aqui, vou ter que pegar ele pra formatar",
     "data": "2025-08-10",
@@ -162,7 +162,7 @@
  {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Ah não, demora?",
     "data": "2025-08-10",
@@ -172,7 +172,7 @@
  {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "empresa",
     "mensagem": "Já chego aí, a gente conversa",
     "data": "2025-08-10",
@@ -182,61 +182,61 @@
  {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Formatei ele aqui, vou entregar",
     "data": "2025-08-11",
     "hora": "15:39",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
  {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Certinho",
     "data": "2025-08-11",
     "hora": "15:42",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
  {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "E aí, a formatação deu certo?",
     "data": "2025-08-13",
     "hora": "14:43",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
  {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Aparentemente deu sim, não reiniciou mais",
     "data": "2025-08-13",
     "hora": "14:49",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
  {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Muito bom, coisa boa",
     "data": "2025-08-13",
     "hora": "14:49",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
  {
     "id_cliente": "C009",
     "id_funcionario": "F03",
-    "id_serviço": 9,
+    "id_serviço": "S009",
     "autor": "cliente",
     "mensagem": "Muito obrigado, depois eu mando o pagamento",
     "data": "2025-08-13",
     "hora": "14:50",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   }
 ]

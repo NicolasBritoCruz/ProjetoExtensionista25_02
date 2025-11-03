@@ -2,7 +2,7 @@
   {
     "id_cliente": "C016",
     "id_funcionario": "F01",
-    "id_serviço": 20,
+    "id_serviço": "S020",
     "autor": "cliente",
     "mensagem": "Oi, tudo bem? Meu computador não abre mais arquivos PDF, você consegue ver pra mim?",
     "data": "2025-08-03",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C016",
     "id_funcionario": "F01",
-    "id_serviço": 20,
+    "id_serviço": "S020",
     "autor": "empresa",
     "mensagem": "Oi, bom dia! Consigo sim. Você sabe se tinha algum programa instalado antes?",
     "data": "2025-08-03",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C016",
     "id_funcionario": "F01",
-    "id_serviço": 20,
+    "id_serviço": "S020",
     "autor": "cliente",
     "mensagem": "Acho que tinha um Adobe Reader, mas parou de abrir do nada.",
     "data": "2025-08-03",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C016",
     "id_funcionario": "F01",
-    "id_serviço": 20,
+    "id_serviço": "S020",
     "autor": "empresa",
     "mensagem": "Tranquilo, podemos resolver remotamente. Consegue me passar um acesso AnyDesk?",
     "data": "2025-08-03",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C016",
     "id_funcionario": "F01",
-    "id_serviço": 20,
+    "id_serviço": "S020",
     "autor": "cliente",
     "mensagem": "Sim, o código é 135 476 729.",
     "data": "2025-08-03",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C016",
     "id_funcionario": "F01",
-    "id_serviço": 20,
+    "id_serviço": "S020",
     "autor": "empresa",
     "mensagem": "Perfeito, já estou acessando. Vou reinstalar o Adobe Reader aqui pra corrigir.",
     "data": "2025-08-03",
@@ -62,21 +62,21 @@
   {
     "id_cliente": "C016",
     "id_funcionario": "F01",
-    "id_serviço": 20,
+    "id_serviço": "S020",
     "autor": "empresa",
     "mensagem": "Pronto, reinstalei e testei. Agora os PDFs estão abrindo normalmente.",
     "data": "2025-08-03",
     "hora": "09:45",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C016",
     "id_funcionario": "F01",
-    "id_serviço": 20,
+    "id_serviço": "S020",
     "autor": "cliente",
     "mensagem": "Show de bola, abriu certinho aqui. Obrigado!",
     "data": "2025-08-03",
     "hora": "09:47",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   }
 ]

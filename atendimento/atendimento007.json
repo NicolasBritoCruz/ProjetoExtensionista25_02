@@ -2,7 +2,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "cliente",
     "mensagem": "Boa tarde",
     "data": "2025-08-16",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "cliente",
     "mensagem": "Você pode acessar agora?",
     "data": "2025-08-16",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "empresa",
     "mensagem": "Opaa, boa tarde",
     "data": "2025-08-16",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "empresa",
     "mensagem": "Posso ver se o (nome) está no escritório",
     "data": "2025-08-16",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "empresa",
     "mensagem": "Dia de sexta eu trabalho só a parte da manhã",
     "data": "2025-08-16",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "cliente",
     "mensagem": "Segunda vc faz",
     "data": "2025-08-16",
@@ -62,7 +62,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "empresa",
     "mensagem": "Pode ser",
     "data": "2025-08-16",
@@ -72,7 +72,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "empresa",
     "mensagem": "Opaa, posso conectar?",
     "data": "2025-08-19",
@@ -82,7 +82,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "cliente",
     "mensagem": "Pode sim",
     "data": "2025-08-19",
@@ -92,7 +92,7 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "cliente",
     "mensagem": "841851753",
     "data": "2025-08-19",
@@ -102,31 +102,31 @@
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "empresa",
     "mensagem": "Acredito que tenha dado certo",
     "data": "2025-08-19",
     "hora": "13:36",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "cliente",
     "mensagem": "Deu sim, muito obrigado",
     "data": "2025-08-19",
     "hora": "13:37",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
   {
     "id_cliente": "C007",
     "id_funcionario": "F03",
-    "id_serviço": 7,
+    "id_serviço": "S007",
     "autor": "cliente",
     "mensagem": "Tava precisando de usar o notebook kkkk, valeu",
     "data": "2025-08-19",
     "hora": "13:37",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   }
 ]

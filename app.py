@@ -344,7 +344,7 @@ else:
 
 # ... (código do df_filtrado) ...
 if not funcionarios_selecionados and not st.session_state.df.empty:
-    st.warning("Por favor, selecione pelo menos um funcionário no filtro da sidebar.")
+    st.warning("Por favor, selecione pelo menos um funcionário no filtro.")
     df_filtrado = pd.DataFrame(columns=st.session_state.df.columns)
 elif st.session_state.df.empty:
      df_filtrado = st.session_state.df.copy()
@@ -378,32 +378,93 @@ else:
     st.pyplot(fig2)
 
     st.markdown("---")
+    st.subheader("📊 Satisfação Média por Funcionário")
+
+    # --- Define emoções positivas/negativas 
+    positivas = ["alegria", "gratidão", "otimismo", "amor", "diversão", "alívio", "orgulho", "admiração", "aprovação", "carinho", "excitação", "curiosidade"]
+    negativas = ["tristeza", "raiva", "medo", "decepção", "desgosto", "remorso", "desaprovação"]
+
+    def polaridade(emo):
+        if emo in positivas: return 1
+        if emo in negativas: return -1
+        return 0
+
+    # --- Cria cópia para não alterar o df original
+    df_func = df_filtrado.copy()
+
+    # --- Aplica polaridade
+    df_func["polaridade"] = df_func["emocao_pt"].apply(polaridade)
+
+    # --- Agrupa por funcionário e calcula média da polaridade
+    media_por_func = (
+        df_func.groupby("id_funcionario")["polaridade"]
+        .mean()
+        .reset_index()
+    )
+
+    # --- Define cores com base no valor da média
+    cores = [
+        "#122f51" if val > 0 else "#af162a" if val < 0 else "lightgray"
+        for val in media_por_func["polaridade"]
+    ]
+
+    # --- Plota o gráfico
+    fig, ax = plt.subplots(figsize=(8,5))
+    sns.barplot(
+        data=media_por_func,
+        x="id_funcionario",
+        y="polaridade",
+        palette=cores,
+        ax=ax
+    )
+    ax.axhline(0, color="gray", linestyle="--", linewidth=1)
+    ax.set_title("Satisfação Média por Funcionário", fontsize=14, weight="bold")
+    ax.set_xlabel("Funcionário")
+    ax.set_ylabel("Satisfação Média")
+    st.pyplot(fig)
+
+    st.markdown("---")
     st.subheader("⚡ Velocímetro de Eficiência por Funcionário")
-    cols = st.columns(3) 
+
+    cols = st.columns(3)
     idx = 0
+
     for func in sorted(df_filtrado["id_funcionario"].unique()):
         df_func = df_filtrado[df_filtrado["id_funcionario"] == func]
-        total = len(df_func)
-        resolvidos = len(df_func[df_func["estado_servico"] == "concluido"])
-        andamento = len(df_func[df_func["estado_servico"] == "andamento"])
-        eficiencia = ((resolvidos + andamento) / total) * 100 if total > 0 else 0
+    
+        # Agrupa por id_serviço para ver o último estado de cada atendimento
+        ultimos_estados = (
+            df_func.sort_values(["id_serviço", "data"])
+            .groupby("id_serviço", as_index=False)
+            .last()
+        )
+    
+        total_servicos = len(ultimos_estados)
+        concluidos = (ultimos_estados["estado_servico"].str.lower() == "concluído").sum()
+    
+        eficiencia = (concluidos / total_servicos) * 100 if total_servicos > 0 else 0
 
+        # Cria o velocímetro
         fig = go.Figure(go.Indicator(
             mode="gauge+number",
             value=eficiencia,
             title={'text': f"{func}"},
-            gauge={'axis': {'range': [0, 100], 'tickwidth': 1, 'tickcolor': "darkblue"},
-                   'bar': {'color': "green"},
-                   'steps': [
-                       {'range': [0, 50], 'color': 'lightgray'},
-                       {'range': [50, 80], 'color': 'gray'}],
-                   'threshold': {
-                       'line': {'color': "red", 'width': 4},
-                       'thickness': 0.75,
-                       'value': 90}}
+            gauge={
+                'axis': {'range': [0, 100], 'tickwidth': 1, 'tickcolor': "darkblue"},
+                'bar': {'color': "green"},
+                'steps': [
+                    {'range': [0, 50], 'color': 'lightgray'},
+                    {'range': [50, 80], 'color': 'gray'}
+                ],
+                'threshold': {
+                    'line': {'color': "red", 'width': 4},
+                    'thickness': 0.75,
+                    'value': 100
+                }
+            }
         ))
+    
         fig.update_layout(height=250)
-        
         col = cols[idx % len(cols)]
         with col:
             st.plotly_chart(fig, use_container_width=True)
@@ -425,7 +486,7 @@ else:
     st.subheader("🕒 Satisfação Média por Horário")
 
     # Define emoções positivas/negativas (ajuste conforme seu mapa)
-    positivas = ["alegria", "gratidão", "otimismo", "amor", "diversão", "alívio", "orgulho", "admiração", "aprovação", "carinho", "excitação"]
+    positivas = ["alegria", "gratidão", "otimismo", "amor", "diversão", "alívio", "orgulho", "admiração", "aprovação", "carinho", "excitação", "curiosidade"]
     negativas = ["tristeza", "raiva", "medo", "decepção", "desgosto", "remorso", "desaprovação"]
 
     def polaridade(emo):
@@ -492,6 +553,44 @@ else:
     ax.set_xlabel("Hora do Dia")
     ax.set_ylabel("Satisfação (média)")
     ax.set_xticklabels(media_por_hora["hora_label"], rotation=45)
+
+    st.pyplot(fig)
+    st.markdown("---")
+
+    st.subheader("📈 Satisfação Média por Data")
+
+    # Lista de emoções positivas/negativas
+    positivas = ["alegria", "gratidão", "otimismo", "amor", "diversão", "alívio", "orgulho", "admiração", "aprovação", "carinho", "excitação", "curiosidade"]
+    negativas = ["tristeza", "raiva", "medo", "decepção", "desgosto", "remorso", "desaprovação"]
+
+    def polaridade(emo):    
+        if emo in positivas: return 1
+        if emo in negativas: return -1
+        return 0
+
+    # Faz uma cópia do df para não alterar o original
+    df_data = df_filtrado.copy()
+
+    # Aplica polaridade
+    df_data["polaridade"] = df_data["emocao_pt"].apply(polaridade)
+
+    # Garante que a coluna 'data' está em datetime
+    df_data["data"] = pd.to_datetime(df_data["data"], errors="coerce")
+
+    # Remove datas inválidas
+    df_data = df_data.dropna(subset=["data"])
+
+    # Agrupa por data e calcula média da polaridade
+    media_por_data = df_data.groupby("data")["polaridade"].mean().reset_index()
+
+    # Plota gráfico de linha
+    fig, ax = plt.subplots(figsize=(12,5))
+    ax.plot(media_por_data["data"], media_por_data["polaridade"], marker="o", color="#348e91", linewidth=2)
+    ax.axhline(0, color="gray", linestyle="--", linewidth=1)
+    ax.set_title("Satisfação Média por Data", fontsize=14, weight="bold")
+    ax.set_xlabel("Data")
+    ax.set_ylabel("Satisfação (média)")
+    ax.tick_params(axis='x', rotation=45)
 
     st.pyplot(fig)
     st.markdown("---")

@@ -2,7 +2,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "empresa",
     "mensagem": "Boa tarde, estou conectado no computador",
     "data": "2025-08-17",
@@ -12,7 +12,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "empresa",
     "mensagem": "A conexão caiu, consegue aceitar novamente?",
     "data": "2025-08-17",
@@ -22,7 +22,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "cliente",
     "mensagem": "Ok.",
     "data": "2025-08-17",
@@ -32,7 +32,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "empresa",
     "mensagem": "Tem que achar essa etiqueta que está pedindo aí",
     "data": "2025-08-17",
@@ -42,7 +42,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "cliente",
     "mensagem": "Qual etiqueta? não entendi",
     "data": "2025-08-17",
@@ -52,7 +52,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "cliente",
     "mensagem": "Tá pedindo número de série, não é?",
     "data": "2025-08-17",
@@ -62,7 +62,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "empresa",
     "mensagem": "Fica na etiqueta",
     "data": "2025-08-17",
@@ -72,7 +72,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "cliente",
     "mensagem": "Mas na onde fica essa etiqueta?",
     "data": "2025-08-17",
@@ -82,7 +82,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "empresa",
     "mensagem": "Muda de impressora pra impressora",
     "data": "2025-08-17",
@@ -92,7 +92,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "empresa",
     "mensagem": "Mas é igual tá falando aí, ou é na parte de trás, ou na parte de baixo",
     "data": "2025-08-17",
@@ -102,7 +102,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "cliente",
     "mensagem": "Pra eu imprimir no celular, é só baixar o aplicativo?",
     "data": "2025-08-17",
@@ -112,7 +112,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "cliente",
     "mensagem": "Onde eu instalo?",
     "data": "2025-08-17",
@@ -122,7 +122,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "empresa",
     "mensagem": "É pela app store, só pesquisar Epson",
     "data": "2025-08-30",
@@ -132,7 +132,7 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "empresa",
     "mensagem": "Acho que chama Epson iPrint",
     "data": "2025-08-17",
@@ -142,22 +142,22 @@
   {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "empresa",
     "mensagem": "Deu certo a instalação",
     "data": "2025-08-17",
     "hora": "11:58",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   },
 {
     "id_cliente": "C011",
     "id_funcionario": "F01",
-    "id_serviço": 11,
+    "id_serviço": "S011",
     "autor": "cliente",
     "mensagem": "Ok, muito obrigado, o valor vejo com o (nome).",
     "data": "2025-08-17",
     "hora": "11:58",
-    "estado_servico": "concluido"
+    "estado_servico": "concluído"
   }
 ]
   

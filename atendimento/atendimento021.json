@@ -1,0 +1,72 @@
+[
+  {
+    "id_cliente": "C017",
+    "id_funcionario": "F02",
+    "id_serviço": "S021",
+    "autor": "cliente",
+    "mensagem": "Meu pc tá com um barulho esquisito no cooler, parece avião decolando kkk",
+    "data": "2025-09-05",
+    "hora": "09:12",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C017",
+    "id_funcionario": "F02",
+    "id_serviço": "S021",
+    "autor": "empresa",
+    "mensagem": "Isso geralmente é poeira ou desgaste, já limpou ele esse ano?",
+    "data": "2025-09-05",
+    "hora": "09:15",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C017",
+    "id_funcionario": "F02",
+    "id_serviço": "S021",
+    "autor": "cliente",
+    "mensagem": "Nunca, só ligo e deixo rodando",
+    "data": "2025-09-05",
+    "hora": "09:16",
+    "estado_servico": "pendente"
+  },
+  {
+    "id_cliente": "C017",
+    "id_funcionario": "F02",
+    "id_serviço": "S021",
+    "autor": "empresa",
+    "mensagem": "Vou passar aí pra lubrificar",
+    "data": "2025-09-05",
+    "hora": "09:18",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C017",
+    "id_funcionario": "F02",
+    "id_serviço": "S021",
+    "autor": "cliente",
+    "mensagem": "Pode ser hoje a tarde?",
+    "data": "2025-09-05",
+    "hora": "09:20",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C017",
+    "id_funcionario": "F02",
+    "id_serviço": "S021",
+    "autor": "empresa",
+    "mensagem": "Pode sim",
+    "data": "2025-09-05",
+    "hora": "09:22",
+    "estado_servico": "andamento"
+  },
+  {
+    "id_cliente": "C017",
+    "id_funcionario": "F02",
+    "id_serviço": "S021",
+    "autor": "empresa",
+    "mensagem": "Já limpei e troquei a pasta térmica, parou o barulho",
+    "data": "2025-09-05",
+    "hora": "15:44",
+    "estado_servico": "concluído"
+  }
+]
