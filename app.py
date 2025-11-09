@@ -9,6 +9,13 @@ import plotly.graph_objects as go
 import numpy as np
 import streamlit as st
 from datetime import datetime # Precisamos disso de volta
+import re
+from collections import Counter
+import nltk
+from nltk.corpus import stopwords
+import seaborn as sns
+
+nltk.download('stopwords', quiet=True)
 
 # --- PARTE 1: CONFIGURAÇÃO GERAL (Inalterada) ---
 # ... (todo o seu EMOCOES_MAP, traducoes, etc. permanecem aqui) ...
@@ -356,16 +363,21 @@ st.markdown("---")
 if df_filtrado.empty:
     st.header("Sem dados para exibir. Processe arquivos JSON ou adicione um atendimento.")
 else:
-    # --- GRÁFICOS (Inalterados) ---
-    # ... (GRÁFICO 1, 2, 3, 4, 5) ...
     st.subheader("🎭 Distribuição de Emoções (Geral)")
     contagem = df_filtrado["emocao_pt"].value_counts()
     cores_mapeadas = [cores_emocoes.get(emocao, "#B0BEC5") for emocao in contagem.index]
-    fig1, ax1 = plt.subplots(figsize=(6, 6))
-    ax1.pie(contagem, labels=None, startangle=90, colors=cores_mapeadas)
-    ax1.legend(contagem.index, title="Emoções", loc="center left", bbox_to_anchor=(1, 0, 0.5, 1))
-    ax1.axis("equal")
-    st.pyplot(fig1)
+    # --- GRÁFICO DE BARRAS (à esquerda) ---
+    fig_bar, ax_bar = plt.subplots(figsize=(5, 4))        
+    # Invertemos a ordem para que 'neutro' apareça no topo
+    contagem_invertida = contagem[::-1]
+    cores_invertidas = cores_mapeadas[::-1]        
+    # Gráfico horizontal (barh) com ordem invertida
+    ax_bar.barh(contagem_invertida.index, contagem_invertida.values, color=cores_invertidas)        
+    ax_bar.set_xlabel("Quantidade")
+    ax_bar.set_ylabel("Emoções")
+    ax_bar.set_title("Distribuição de Emoções (Barras)")        
+    st.pyplot(fig_bar)
+
 
     st.markdown("---")
     st.subheader("👤 Emoções por Funcionário")
@@ -621,6 +633,42 @@ else:
         hide_index=True,
         use_container_width=True
     )
+
+    # --- ANÁLISE DE PALAVRAS MAIS USADAS ---
+    st.markdown("---")
+    st.subheader("🔠 Ranking das Palavras Mais Usadas pelos Clientes")
+
+    # Junta todas as mensagens do filtro atual
+    textos = " ".join(df_filtrado["mensagem"].dropna().astype(str).tolist()).lower()
+
+    # Remove pontuação, números e caracteres especiais
+    textos_limpos = re.sub(r"[^a-záéíóúãõâêôç\s]", " ", textos)
+
+    # Quebra em palavras individuais
+    palavras = textos_limpos.split()
+
+    # Remove stopwords e palavras curtas
+    stop_words = set(stopwords.words("portuguese"))
+    palavras_filtradas = [p for p in palavras if p not in stop_words and len(p) > 2]
+
+    # Conta frequência das palavras
+    contagem_palavras = Counter(palavras_filtradas)
+
+    # Cria DataFrame com top 20 palavras
+    df_palavras = pd.DataFrame(contagem_palavras.most_common(100), columns=["palavra", "frequencia"])
+
+    # Exibe tabela
+    st.dataframe(df_palavras, use_container_width=True)
+
+    # Gera gráfico de barras com Seaborn
+    fig, ax = plt.subplots(figsize=(8, 5))
+    sns.barplot(data=df_palavras, x="frequencia", y="palavra", palette="viridis")
+    ax.set_title("Top 20 Palavras Mais Usadas nas Mensagens dos Clientes", fontsize=14, weight="bold")
+    ax.set_xlabel("Frequência")
+    ax.set_ylabel("Palavra")
+    st.pyplot(fig)
+
+
 
 st.markdown("---")
 st.caption("Desenvolvido para análise emocional de atendimentos - usando PySentimiento + Streamlit")
