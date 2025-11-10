@@ -14,6 +14,8 @@ from collections import Counter
 import nltk
 from nltk.corpus import stopwords
 import seaborn as sns
+from unidecode import unidecode # <--- 1. IMPORTAR UNIDECODE
+import openpyxl
 
 nltk.download('stopwords', quiet=True)
 
@@ -641,21 +643,75 @@ else:
     # Junta todas as mensagens do filtro atual
     textos = " ".join(df_filtrado["mensagem"].dropna().astype(str).tolist()).lower()
 
-    # Remove pontuação, números e caracteres especiais
-    textos_limpos = re.sub(r"[^a-záéíóúãõâêôç\s]", " ", textos)
+    # --- ETAPA DE NORMALIZAÇÃO ---
+
+    # 2. NORMALIZAR: Remove acentos de todo o texto (ex: "máquina" -> "maquina")
+    textos_sem_acentos = unidecode(textos)
+
+    # Remove pontuação, números e caracteres especiais (regex simplificado, já que não há mais acentos)
+    textos_limpos = re.sub(r"[^a-z\s]", " ", textos_sem_acentos)
 
     # Quebra em palavras individuais
     palavras = textos_limpos.split()
 
+    # --- ETAPA DE FILTRAGEM (STOPWORDS) ---
+
+    # 3. NORMALIZAR STOPWORDS: Remove acentos das stopwords também
+    stop_words_pt = set(stopwords.words("portuguese"))
+    stop_words = set(unidecode(sw) for sw in stop_words_pt) # (ex: "não" -> "nao")
+
     # Remove stopwords e palavras curtas
-    stop_words = set(stopwords.words("portuguese"))
     palavras_filtradas = [p for p in palavras if p not in stop_words and len(p) > 2]
 
-    # Conta frequência das palavras
-    contagem_palavras = Counter(palavras_filtradas)
+        # --- ETAPA DE AGRUPAMENTO (SINÔNIMOS) ---
+
+    try:
+        # 1. Conta TODAS as palavras filtradas (antes de agrupar)
+        contagem_raw = Counter(palavras_filtradas)
+        
+        # 2. Cria o DataFrame com todas as palavras e suas frequências
+        df_para_exportar = pd.DataFrame(contagem_raw.most_common(), columns=["palavra", "frequencia"])
+        
+        # 3. Define o nome do arquivo
+        nome_arquivo = "palavras.xlsx"
+        
+        # 4. Salva o DataFrame em um arquivo Excel
+        # index=False para não salvar o índice do pandas
+        df_para_exportar.to_excel(nome_arquivo, index=False)
+        
+        st.success(f"Arquivo '{nome_arquivo}' gerado com sucesso na pasta do projeto!")
+        st.info("Abra este arquivo no Excel para encontrar sinônimos e adicioná-los ao `mapa_sinonimos`.")
+
+    except Exception as e:
+        st.error(f"Erro ao gerar o arquivo Excel: {e}")
+    # --- [FIM DA NOVA SEÇÃO] ---
+
+    # 4. DEFINIR O MAPA DE SINÔNIMOS (a palavra-chave é a forma normalizada)
+    # Mapeia a palavra encontrada (chave) para a palavra que você quer que apareça (valor)
+    mapa_sinonimos = {
+        "maquina": "computador",
+        "pc": "computador",
+        "notebook": "computador",
+        "note": "computador",
+        # Adicione mais sinônimos conforme encontrar
+        "tela": "monitor",
+        "display": "monitor",
+        "problema": "defeito",
+        "falha": "defeito",
+    }
+
+    # 5. APLICAR O MAPA
+    # Usa .get(p, p) que significa: "Tente pegar o sinônimo de 'p' no mapa.
+    # Se 'p' não estiver no mapa, apenas use 'p' mesmo."
+    palavras_agrupadas = [mapa_sinonimos.get(p, p) for p in palavras_filtradas]
+
+    # --- CONTAGEM E EXIBIÇÃO ---
+
+    # 6. Conta frequência das palavras JÁ AGRUPADAS
+    contagem_palavras = Counter(palavras_agrupadas)
 
     # Cria DataFrame com top 20 palavras
-    df_palavras = pd.DataFrame(contagem_palavras.most_common(100), columns=["palavra", "frequencia"])
+    df_palavras = pd.DataFrame(contagem_palavras.most_common(20), columns=["palavra", "frequencia"])
 
     # Exibe tabela
     st.dataframe(df_palavras, use_container_width=True)
