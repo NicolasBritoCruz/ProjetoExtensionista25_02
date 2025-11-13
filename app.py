@@ -386,6 +386,7 @@ else:
     fig2, ax2 = plt.subplots(figsize=(10, 5))
     cores_grafico = [cores_emocoes.get(emocao, "#B0BEC5") for emocao in df_filtrado['emocao_pt'].unique()]
     sns.countplot(data=df_filtrado, x="id_funcionario", hue="emocao_pt", ax=ax2, palette=cores_grafico)
+    ax2.set_title("Emoções por Funcionário", fontsize=14, weight="bold")
     ax2.set_xlabel("Funcionário")
     ax2.set_ylabel("Quantidade de mensagens")
     ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha="right")
@@ -490,6 +491,7 @@ else:
     fig, ax = plt.subplots(figsize=(8,5))
     cores = ["#213635", "#348e91", "#1c5052"]
     sns.barplot(x="id_funcionario", y="confianca", data=media_confianca, ax=ax, palette=cores)
+    ax.set_title("Confiança Média da Emoção por Funcionário", fontsize=14, weight="bold")
     ax.set_ylabel("Confiança Média da Emoção")
     ax.set_xlabel("Funcionário")
     ax.set_ylim(0, 1) 
@@ -617,6 +619,7 @@ else:
         
         fig, ax = plt.subplots(figsize=(10,4))
         ax.plot(media_sentimento['data'], media_sentimento['confianca'], marker='o', color="#af162a")
+        ax.set_title("Confiança da Emoção ao Longo do Período", fontsize=14, weight="bold")
         ax.set_ylabel("Confiança Média")
         ax.set_xlabel("Data")
         ax.tick_params(axis='x', rotation=45)
@@ -630,8 +633,25 @@ else:
     st.subheader("💬 Exemplos de Mensagens (do Filtro Atual)")
     amostra = df_filtrado.sample(min(10, len(df_filtrado))) if len(df_filtrado) > 0 else pd.DataFrame()
     
+    # 1. Garante que 'data' e 'hora' sejam strings e as combina
+    amostra['data_completa_str'] = amostra['data'].astype(str) + ' ' + amostra['hora'].astype(str)
+
+    # 2. Converte a string combinada em um objeto datetime
+    amostra['data_completa_dt'] = pd.to_datetime(amostra['data_completa_str'])
+
+    # 3. Cria a coluna final formatada como você deseja (dd-mm-aaaa HH:MM)
+    amostra['data_e_hora'] = amostra['data_completa_dt'].dt.strftime('%d-%m-%Y / %H:%M')
+
+    # 4. Seleciona as colunas que você quer exibir, na nova ordem
+    colunas_finais = [
+        "data_e_hora",  # Sua nova coluna combinada
+        "mensagem",
+        "emocao_pt",
+        "confianca"
+    ]
+    
     st.dataframe(
-        amostra[["data", "hora", "id_funcionario", "id_serviço", "mensagem", "emocao_pt", "confianca", "arquivo"]],
+        amostra[colunas_finais], # Usa a lista de colunas finais
         hide_index=True,
         use_container_width=True
     )
@@ -662,13 +682,14 @@ else:
 
     stop_words_custom = {
     "ola", "bom", "dia", "boa", "tarde", "noite",
-    "obrigado", "obrigada", "favor", "por",
-    "gostaria", "saber", "preciso", "ajuda",
-    "consegue", "poderia", "gentileza", "pfv",
-    "aqui", "sim", "pode", "pra", "deu", "vou",
+    "obrigada", "favor", "por", "gostaria", 
+    "saber", "preciso", "consegue", "poderia",
+    "gentileza", "pfv","aqui", "sim", "pode",
+    "pra", "deu", "vou", "mando"
     "certinho", "nada", "certo", "bem", "acho",
     "agora", "tudo", "mim", "algo", "valeu",
-    "vcs", "entao", "deixar", "viu", "ajudar"
+    "vcs", "entao", "deixar", "viu", "ajudar",
+    "pai", "fazer", "segunda", "sabe", "fico"
     }
 
     #Adiciona as palavras customizadas ao set principal
@@ -701,9 +722,10 @@ else:
     # Mapeia a palavra encontrada (chave) para a palavra que você quer que apareça (valor)
     mapa_sinonimos = {
         "maquina": "computador",
+        "computadores": "computador",
+        "impressoras": "impressora",
         "pc": "computador",
-        "notebook": "computador",
-        "note": "computador",
+        "abrir": "notebook",
         # Adicione mais sinônimos conforme encontrar
         "tela": "monitor",
         "display": "monitor",
@@ -736,11 +758,11 @@ else:
 
     # Cria DataFrame com top 20 palavras (AGORA BASEADO NO DF COMPLETO)
     # Isso continua sendo usado para o gráfico de barras
-    df_palavras = df_completo.head(20) 
+    df_palavras = df_completo.head(10) 
 
     # --- [MUDANÇA 2] ---
     # Exibe tabela INTERATIVA E PESQUISÁVEL com st.data_editor
-    st.subheader("📊 Tabela Pesquisável de Palavras")
+    st.subheader("📊 Tabela de Palavras")
     st.info("Use o ícone de lupa 🔍 no canto superior direito da tabela para pesquisar.")
 
     st.data_editor(
@@ -756,10 +778,10 @@ else:
     )
 
     # Gera gráfico de barras com Seaborn (esta parte fica igual)
-    st.markdown("### Top 20 Palavras")
+    st.markdown("### Top 10 Palavras")
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.barplot(data=df_palavras, x="frequencia", y="palavra", palette="viridis")
-    ax.set_title("Top 20 Palavras Mais Usadas nas Mensagens dos Clientes", fontsize=14, weight="bold")
+    ax.set_title("10 termos Mais utilizados nas Mensagens dos Clientes", fontsize=14, weight="bold")
     ax.set_xlabel("Frequência")
     ax.set_ylabel("Palavra")
     st.pyplot(fig)
