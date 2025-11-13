@@ -660,6 +660,20 @@ else:
     stop_words_pt = set(stopwords.words("portuguese"))
     stop_words = set(unidecode(sw) for sw in stop_words_pt) # (ex: "não" -> "nao")
 
+    stop_words_custom = {
+    "ola", "bom", "dia", "boa", "tarde", "noite",
+    "obrigado", "obrigada", "favor", "por",
+    "gostaria", "saber", "preciso", "ajuda",
+    "consegue", "poderia", "gentileza", "pfv",
+    "aqui", "sim", "pode", "pra", "deu", "vou",
+    "certinho", "nada", "certo", "bem", "acho",
+    "agora", "tudo", "mim", "algo", "valeu",
+    "vcs", "entao", "deixar", "viu", "ajudar"
+    }
+
+    #Adiciona as palavras customizadas ao set principal
+    stop_words.update(stop_words_custom)
+
     # Remove stopwords e palavras curtas
     palavras_filtradas = [p for p in palavras if p not in stop_words and len(p) > 2]
 
@@ -678,9 +692,6 @@ else:
         # 4. Salva o DataFrame em um arquivo Excel
         # index=False para não salvar o índice do pandas
         df_para_exportar.to_excel(nome_arquivo, index=False)
-        
-        st.success(f"Arquivo '{nome_arquivo}' gerado com sucesso na pasta do projeto!")
-        st.info("Abra este arquivo no Excel para encontrar sinônimos e adicioná-los ao `mapa_sinonimos`.")
 
     except Exception as e:
         st.error(f"Erro ao gerar o arquivo Excel: {e}")
@@ -710,13 +721,42 @@ else:
     # 6. Conta frequência das palavras JÁ AGRUPADAS
     contagem_palavras = Counter(palavras_agrupadas)
 
-    # Cria DataFrame com top 20 palavras
-    df_palavras = pd.DataFrame(contagem_palavras.most_common(20), columns=["palavra", "frequencia"])
+    # 6. Conta frequência das palavras JÁ AGRUPADAS
+    contagem_palavras = Counter(palavras_agrupadas)
 
-    # Exibe tabela
-    st.dataframe(df_palavras, use_container_width=True)
+    # --- [MUDANÇA 1] ---
+    # Cria DataFrame com TODAS as palavras e adiciona o ranking (posição)
+    df_completo = pd.DataFrame(contagem_palavras.most_common(), columns=["palavra", "frequencia"])
+    # Adiciona a coluna "posicao" (o índice + 1)
+    df_completo["posicao"] = df_completo.index + 1
+    # Reordena as colunas para a posição vir primeiro
+    df_completo = df_completo[["posicao", "palavra", "frequencia"]]
+    # --- [FIM DA MUDANÇA 1] ---
 
-    # Gera gráfico de barras com Seaborn
+
+    # Cria DataFrame com top 20 palavras (AGORA BASEADO NO DF COMPLETO)
+    # Isso continua sendo usado para o gráfico de barras
+    df_palavras = df_completo.head(20) 
+
+    # --- [MUDANÇA 2] ---
+    # Exibe tabela INTERATIVA E PESQUISÁVEL com st.data_editor
+    st.subheader("📊 Tabela Pesquisável de Palavras")
+    st.info("Use o ícone de lupa 🔍 no canto superior direito da tabela para pesquisar.")
+
+    st.data_editor(
+        df_completo, # Usamos o DataFrame completo aqui!
+        use_container_width=True,
+        hide_index=True, # Esconde o índice antigo do pandas
+        disabled=True,    # Impede que os usuários editem os dados
+        column_config={
+        "posicao": st.column_config.NumberColumn(width="small"),
+        "frequencia": st.column_config.NumberColumn(width="small"),
+        "palavra": st.column_config.TextColumn(width=None)
+    }
+    )
+
+    # Gera gráfico de barras com Seaborn (esta parte fica igual)
+    st.markdown("### Top 20 Palavras")
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.barplot(data=df_palavras, x="frequencia", y="palavra", palette="viridis")
     ax.set_title("Top 20 Palavras Mais Usadas nas Mensagens dos Clientes", fontsize=14, weight="bold")
