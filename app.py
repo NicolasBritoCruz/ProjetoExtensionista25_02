@@ -698,26 +698,6 @@ else:
     # Remove stopwords e palavras curtas
     palavras_filtradas = [p for p in palavras if p not in stop_words and len(p) > 2]
 
-        # --- ETAPA DE AGRUPAMENTO (SINÔNIMOS) ---
-
-    try:
-        # 1. Conta TODAS as palavras filtradas (antes de agrupar)
-        contagem_raw = Counter(palavras_filtradas)
-        
-        # 2. Cria o DataFrame com todas as palavras e suas frequências
-        df_para_exportar = pd.DataFrame(contagem_raw.most_common(), columns=["palavra", "frequencia"])
-        
-        # 3. Define o nome do arquivo
-        nome_arquivo = "palavras.xlsx"
-        
-        # 4. Salva o DataFrame em um arquivo Excel
-        # index=False para não salvar o índice do pandas
-        df_para_exportar.to_excel(nome_arquivo, index=False)
-
-    except Exception as e:
-        st.error(f"Erro ao gerar o arquivo Excel: {e}")
-    # --- [FIM DA NOVA SEÇÃO] ---
-
     # 4. DEFINIR O MAPA DE SINÔNIMOS (a palavra-chave é a forma normalizada)
     # Mapeia a palavra encontrada (chave) para a palavra que você quer que apareça (valor)
     mapa_sinonimos = {
