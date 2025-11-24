@@ -16,6 +16,7 @@ from nltk.corpus import stopwords
 import seaborn as sns
 from unidecode import unidecode # <--- 1. IMPORTAR UNIDECODE
 import openpyxl
+from matplotlib.ticker import MaxNLocator
 
 nltk.download('stopwords', quiet=True)
 
@@ -376,8 +377,7 @@ else:
     # Gráfico horizontal (barh) com ordem invertida
     ax_bar.barh(contagem_invertida.index, contagem_invertida.values, color=cores_invertidas)        
     ax_bar.set_xlabel("Quantidade")
-    ax_bar.set_ylabel("Emoções")
-    ax_bar.set_title("Distribuição de Emoções (Barras)")        
+    ax_bar.set_ylabel("Emoções")        
     st.pyplot(fig_bar)
 
 
@@ -386,7 +386,6 @@ else:
     fig2, ax2 = plt.subplots(figsize=(10, 5))
     cores_grafico = [cores_emocoes.get(emocao, "#B0BEC5") for emocao in df_filtrado['emocao_pt'].unique()]
     sns.countplot(data=df_filtrado, x="id_funcionario", hue="emocao_pt", ax=ax2, palette=cores_grafico)
-    ax2.set_title("Emoções por Funcionário", fontsize=14, weight="bold")
     ax2.set_xlabel("Funcionário")
     ax2.set_ylabel("Quantidade de mensagens")
     ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha="right")
@@ -410,12 +409,14 @@ else:
     # --- Aplica polaridade
     df_func["polaridade"] = df_func["emocao_pt"].apply(polaridade)
 
+    df_func_validas = df_func[df_func["polaridade"] != 0]
+
     # --- Agrupa por funcionário e calcula média da polaridade
     media_por_func = (
-        df_func.groupby("id_funcionario")["polaridade"]
-        .mean()
-        .reset_index()
-    )
+     df_func_validas.groupby("id_funcionario")["polaridade"]
+     .mean()
+     .reset_index()
+)
 
     # --- Define cores com base no valor da média
     cores = [
@@ -433,13 +434,12 @@ else:
         ax=ax
     )
     ax.axhline(0, color="gray", linestyle="--", linewidth=1)
-    ax.set_title("Satisfação Média por Funcionário", fontsize=14, weight="bold")
     ax.set_xlabel("Funcionário")
     ax.set_ylabel("Satisfação Média")
     st.pyplot(fig)
 
     st.markdown("---")
-    st.subheader("⚡ Velocímetro de Eficiência por Funcionário")
+    st.subheader("⚡ Taxa de Conclusão por Funcionário")
 
     cols = st.columns(3)
     idx = 0
@@ -491,7 +491,6 @@ else:
     fig, ax = plt.subplots(figsize=(8,5))
     cores = ["#213635", "#348e91", "#1c5052"]
     sns.barplot(x="id_funcionario", y="confianca", data=media_confianca, ax=ax, palette=cores)
-    ax.set_title("Confiança Média da Emoção por Funcionário", fontsize=14, weight="bold")
     ax.set_ylabel("Confiança Média da Emoção")
     ax.set_xlabel("Funcionário")
     ax.set_ylim(0, 1) 
@@ -565,7 +564,6 @@ else:
         ax=ax   
     )
     ax.axhline(0, color="gray", linestyle="--", linewidth=1)
-    ax.set_title("Satisfação Média por Horário", fontsize=14, weight="bold")
     ax.set_xlabel("Hora do Dia")
     ax.set_ylabel("Satisfação (média)")
     ax.set_xticklabels(media_por_hora["hora_label"], rotation=45)
@@ -603,7 +601,6 @@ else:
     fig, ax = plt.subplots(figsize=(12,5))
     ax.plot(media_por_data["data"], media_por_data["polaridade"], marker="o", color="#348e91", linewidth=2)
     ax.axhline(0, color="gray", linestyle="--", linewidth=1)
-    ax.set_title("Satisfação Média por Data", fontsize=14, weight="bold")
     ax.set_xlabel("Data")
     ax.set_ylabel("Satisfação (média)")
     ax.tick_params(axis='x', rotation=45)
@@ -618,8 +615,7 @@ else:
         media_sentimento = df_temp.groupby('data')['confianca'].mean().reset_index()
         
         fig, ax = plt.subplots(figsize=(10,4))
-        ax.plot(media_sentimento['data'], media_sentimento['confianca'], marker='o', color="#af162a")
-        ax.set_title("Confiança da Emoção ao Longo do Período", fontsize=14, weight="bold")
+        ax.plot(media_sentimento['data'], media_sentimento['confianca'], marker='o', color="#348e91")
         ax.set_ylabel("Confiança Média")
         ax.set_xlabel("Data")
         ax.tick_params(axis='x', rotation=45)
@@ -658,7 +654,7 @@ else:
 
     # --- ANÁLISE DE PALAVRAS MAIS USADAS ---
     st.markdown("---")
-    st.subheader("🔠 Ranking das Palavras Mais Usadas pelos Clientes")
+    st.subheader("🔠 Palavras Mais Usadas pelos Clientes")
 
     # Junta todas as mensagens do filtro atual
     textos = " ".join(df_filtrado["mensagem"].dropna().astype(str).tolist()).lower()
@@ -756,17 +752,15 @@ else:
         "palavra": st.column_config.TextColumn(width=None)
     }
     )
+    st.markdown("---")
 
     # Gera gráfico de barras com Seaborn (esta parte fica igual)
-    st.markdown("### Top 10 Palavras")
+    st.markdown("### Termos Mais Utilizados nos Atendimentos")
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.barplot(data=df_palavras, x="frequencia", y="palavra", palette="viridis")
-    ax.set_title("10 termos Mais utilizados nas Mensagens dos Clientes", fontsize=14, weight="bold")
     ax.set_xlabel("Frequência")
-    ax.set_ylabel("Palavra")
+    ax.set_ylabel("Termo")
     st.pyplot(fig)
-
-
 
 st.markdown("---")
 st.caption("Desenvolvido para análise emocional de atendimentos - usando PySentimiento + Streamlit")
