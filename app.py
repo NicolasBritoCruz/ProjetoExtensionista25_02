@@ -16,7 +16,6 @@ from nltk.corpus import stopwords
 import seaborn as sns
 from unidecode import unidecode # <--- 1. IMPORTAR UNIDECODE
 import openpyxl
-from matplotlib.ticker import MaxNLocator
 
 nltk.download('stopwords', quiet=True)
 
@@ -217,7 +216,7 @@ analyzer_emotion = carregar_modelo_emocao()
 analyzer_sentiment = carregar_modelo_sentimento()
 if 'df' not in st.session_state:
     st.session_state.df = carregar_dados_csv()
-st.title("📊 Análise de Emoções dos Atendimentos: JCSI")
+st.title("📊 Análise de sentimentos da empresa jcsi. Feita por Maria Analyzer")
 
 
 # --- PARTE 4: SIDEBAR INTERATIVA (Formulário + Processamento) ---
